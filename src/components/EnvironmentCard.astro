@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+import Arrow from './Arrow.astro';
+import { environments } from '../data/content';
+import { images } from '../data/images';
+interface Props { item: (typeof environments)[number]; }
+const { item } = Astro.props;
+---
+<a class:list={['environment-card', `environment-${item.slug}`]} href={`/ambientes/${item.slug}/`}>
+  <div class="image-reveal"><Image src={images[item.image]} widths={[400, 640, 960]} sizes="(max-width: 640px) 90vw, (max-width: 900px) 45vw, 32vw" format="webp" quality={85} alt={item.alt} loading="lazy" /></div>
+  <div class="environment-label"><h3>{item.title}</h3><Arrow /></div>
+  <p>{item.note}</p>
+</a>

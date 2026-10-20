@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Arrow from '../../components/Arrow.astro';
+import EnvironmentCard from '../../components/EnvironmentCard.astro';
+import { environments } from '../../data/content';
+import { images } from '../../data/images';
+export function getStaticPaths() { return environments.map(item => ({ params: { slug: item.slug }, props: { item } })); }
+type Props = { item: (typeof environments)[number] };
+const { item } = Astro.props;
+const others = environments.filter(environment => environment.slug !== item.slug);
+---
+<Layout title={`${item.title} — Evviva`} description={item.description}>
+  <section class="detail-hero"><div class="container"><a class="breadcrumb" href="/#ambientes">Ambientes <span>/</span> {item.title}</a><p class="eyebrow">{item.eyebrow}</p><h1>{item.headline}</h1><p class="detail-description">{item.description}</p></div><div class="detail-wide-image"><Image src={images[item.image]} widths={[640, 960, 1440, 1672]} sizes="100vw" quality={90} format="webp" alt={item.alt} loading="eager" fetchpriority="high" /></div></section>
+  <section class="section"><div class="container detail-intention"><div><p class="eyebrow">O seu espaço em perspectiva</p><h2>Um ambiente.<br />Muitas possibilidades.</h2></div><div><p>Cada projeto começa com uma conversa sobre o que você precisa e o que deseja sentir no espaço. Materiais, medidas e composições são escolhas feitas a partir desse encontro.</p><ul class="detail-points">{item.details.map(detail => <li>{detail}<Arrow /></li>)}</ul><button class="button button-dark" type="button" data-open-contact>Conversar sobre meu projeto <Arrow /></button></div></div></section>
+  <section class="section related-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">Uma casa inteira de possibilidades</p><h2>Continue explorando.</h2></div></div><div class="environments-grid two-columns">{others.map(other => <EnvironmentCard item={other} />)}</div></div></section>
+</Layout>

@@ -1,0 +1,5 @@
+---
+import { surform } from '../data/surform';
+---
+<footer class="site-footer surform-footer"><div class="container footer-top"><a class="wordmark" href="/surform-ssm/" aria-label="SURFORM — início">SURFORM</a><p>Novas formas de sentir<br />e viver o seu espaço.</p><nav aria-label="Navegação do rodapé SURFORM">{surform.navigation.map(item => <a href={item.href}>{item.label}</a>)}<a href={surform.instagram} target="_blank" rel="noopener noreferrer">@surform_ssm ↗</a><a href="/#ambientes">Voltar à Evviva ↗</a></nav></div><div class="container footer-bottom"><span>SURFORM · Superfícies em SSM.</span><a href="/privacidade/">Privacidade</a></div></footer>
+<style>.surform-footer .wordmark { letter-spacing: .22em; font-size: 24px; } .footer-bottom > span { max-width: 560px; } @media(max-width:600px) { .footer-bottom > span { max-width: 280px; } }</style>

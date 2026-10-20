@@ -1,0 +1,22 @@
+---
+import '@fontsource/dm-sans/latin-400.css';
+import '@fontsource/dm-sans/latin-500.css';
+import '@fontsource/dm-sans/latin-600.css';
+import '@fontsource/playfair-display/latin-400.css';
+import '@fontsource/playfair-display/latin-400-italic.css';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactDialog from '../components/ContactDialog.astro';
+import SurformHeader from '../components/SurformHeader.astro';
+import SurformFooter from '../components/SurformFooter.astro';
+import { site } from '../data/site';
+interface Props { title?: string; description?: string; invitation?: boolean; brand?: 'evviva' | 'surform'; }
+const { title = site.title, description = site.description, invitation = true, brand = 'evviva' } = Astro.props;
+const canonical = site.productionUrl ? new URL(Astro.url.pathname, site.productionUrl).href : null;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{title}</title><meta name="description" content={description} /><meta name="theme-color" content="#f3f0e9" /><meta name="robots" content={site.preview ? 'noindex, nofollow' : 'index, follow'} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:type" content="website" /><meta property="og:locale" content="pt_BR" /><meta property="og:site_name" content={brand === 'surform' ? 'SURFORM' : 'Evviva'} />{canonical && <link rel="canonical" href={canonical} />}<link rel="icon" type="image/x-icon" href="/brand/evviva-favicon.ico" /></head>
+  <body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>{brand === 'surform' ? <SurformHeader /> : <Header />}<main id="conteudo"><slot /></main>{brand === 'surform' ? <SurformFooter /> : <><Footer invitation={invitation} /><ContactDialog /></>}</body>
+</html>

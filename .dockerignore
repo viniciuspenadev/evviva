@@ -1,0 +1,15 @@
+node_modules
+dist
+.astro
+.cache
+.git
+.github
+.agents
+.codex
+.env
+.env.*
+*.log
+docs
+README.md
+MAPEAMENTO_EVVIVA.md
+INVENTARIO_URLS_EVVIVA.json

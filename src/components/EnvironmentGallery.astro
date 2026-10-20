@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import Arrow from './Arrow.astro';
+import { images } from '../data/images';
+import { scenes } from '../data/scenes';
+import '../styles/environments.css';
+---
+<section class="immersive-environments section" id="ambientes" aria-labelledby="environments-title" data-environment-gallery>
+  <div class="container gallery-heading">
+    <div><p class="eyebrow">Explore seu próximo espaço</p><h2 id="environments-title">Cada ambiente,<br /><em>uma forma de viver.</em></h2></div>
+    <p class="gallery-aside">Ambientes para sentir.<br />{' '}Detalhes para descobrir.</p>
+  </div>
+  <div class="gallery-frame">
+    <div class="gallery-stage" data-gallery-stage>
+      <div class="gallery-panels">
+        {scenes.map((scene, index) => <div class={`gallery-panel scene-${scene.id}`} role="tabpanel" id={`scene-${scene.id}`} aria-labelledby={`scene-tab-${scene.id}`} tabindex="0" hidden={index !== 0} data-scene-panel>
+          <Image class="scene-image" src={images[scene.image]} widths={[480, 800, 1200, 1600]} sizes="100vw" format="webp" quality={87} alt={scene.alt} loading="eager" fetchpriority="low" />
+          <div class="scene-scrim"></div>
+          <p class="scene-index">0{index + 1} / {index === 3 ? 'Matéria & forma' : 'Espaços para viver'}</p>
+          {scene.hotspots.map((spot, spotIndex) => <div class="scene-hotspot" data-hotspot style={`--spot-x:${spot.x}%;--spot-y:${spot.y}%;--spot-mobile-x:${spotIndex === 0 ? 29 : 76}%;--spot-mobile-y:${spotIndex === 0 ? 36 : 40}%`}>
+            <button class="hotspot-trigger" type="button" aria-label={`Explorar detalhe: ${spot.title}`} aria-expanded="false" aria-controls={`spot-${scene.id}-${spotIndex}`} data-hotspot-trigger><span class="hotspot-plus" aria-hidden="true">+</span><span class="hotspot-hint" aria-hidden="true">{spot.title}</span></button>
+            <svg class="hotspot-connector" aria-hidden="true"><path data-hotspot-path pathLength="1" /><circle data-hotspot-end r="3" /></svg>
+            <div class="hotspot-bubble" id={`spot-${scene.id}-${spotIndex}`} role="region" aria-label={spot.title} aria-hidden="true" inert data-hotspot-bubble><p class="hotspot-eyebrow">Um olhar de perto · 0{spotIndex + 1}</p><button class="hotspot-close" type="button" aria-label={`Fechar detalhe: ${spot.title}`} data-hotspot-close>×</button><h4>{spot.title}</h4><p class="hotspot-description">{spot.text}</p></div>
+          </div>)}
+          <div class="scene-copy"><p class="eyebrow">{scene.category}</p><h3>{scene.headline}<br /><em>{scene.emphasis}</em></h3><a class="scene-link" href={scene.link}>{scene.action}<Arrow /></a><p class="scene-note">{scene.note}</p></div>
+        </div>)}
+      </div>
+      <div class="scene-arrows"><button type="button" class="scene-prev" data-scene-prev aria-label="Ambiente anterior"><Arrow /></button><button type="button" data-scene-next aria-label="Próximo ambiente"><Arrow /></button></div>
+      <div class="scene-navigator" role="tablist" aria-label="Escolha um ambiente ou conheça a SURFORM">
+        {scenes.map((scene, index) => <button type="button" role="tab" id={`scene-tab-${scene.id}`} aria-label={scene.title} aria-controls={`scene-${scene.id}`} aria-selected={index === 0 ? 'true' : 'false'} tabindex={index === 0 ? 0 : -1} data-scene-tab>
+          <Image src={images[scene.image]} width={72} height={88} format="webp" quality={75} alt={`Miniatura: ${scene.title}`} loading="lazy" />
+          <span><span class="scene-tab-number">0{index + 1}</span><span class="scene-tab-title">{scene.title}</span><span class="scene-tab-line" aria-hidden="true"></span></span>
+        </button>)}
+      </div>
+    </div>
+  </div>
+  <p class="gallery-status" role="status" aria-atomic="true" data-scene-status>Cenário em destaque: Cozinhas</p>
+  <div class="container gallery-caption"><p>Matéria, luz e composição.</p><span>Escolha um cenário e explore os detalhes.</span></div>
+  <noscript><div class="container gallery-fallback">{scenes.map(scene => <a class="text-link" href={scene.link}>{scene.title}<Arrow /></a>)}</div></noscript>
+</section>
+<script>
+  import '../scripts/environments';
+</script>

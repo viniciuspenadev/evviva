@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import { materialStories } from '../data/content';
+import { images } from '../data/images';
+---
+<Layout title="Matéria e detalhe — Evviva" description="Explore texturas, superfícies e possibilidades. Materiais que ajudam a expressar o seu jeito de morar.">
+  <section class="page-heading container"><p class="eyebrow">Matéria e detalhe</p><h1>A escolha começa<br /><em>pelos sentidos.</em></h1><p>Uma cor muda com a luz. Uma textura convida ao toque. Os materiais constroem a forma como sentimos o espaço.</p></section>
+  <section class="container material-explorer" aria-label="Explorar materiais"><div class="material-stage" data-material-stage="madeira"><div class="material-visual material-visual-wood" aria-hidden="true"></div><div class="material-visual material-visual-surface" aria-hidden="true"></div><div class="material-visual material-visual-glass" aria-hidden="true"></div><span class="material-stage-note">Texturas em harmonia</span></div><div class="material-explorer-content"><div class="material-tabs" role="tablist" aria-label="Famílias de materiais">{materialStories.map((item, index) => <button role="tab" id={`tab-${item.id}`} type="button" aria-selected={index === 0 ? 'true' : 'false'} aria-controls={`panel-${item.id}`} tabindex={index === 0 ? 0 : -1} data-material-tab={item.id}>{item.title}</button>)}</div>{materialStories.map((item, index) => <div role="tabpanel" tabindex="0" id={`panel-${item.id}`} aria-labelledby={`tab-${item.id}`} hidden={index !== 0}><p class="eyebrow">{item.title}</p><h2>{item.subtitle}</h2><p>{item.text}</p><button class="text-link" type="button" data-open-contact>Explorar no meu projeto <Arrow /></button></div>)}<p class="image-disclaimer">Consulte amostras, combinações e disponibilidade no desenvolvimento do projeto.</p></div></section>
+  <section class="section"><div class="container philosophy-grid"><div class="philosophy-copy"><p class="eyebrow">O encontro entre escolhas</p><h2>O conjunto revela<br />a sua intenção.</h2><p>Materiais não existem isolados. A madeira encontra a luz, uma superfície dialoga com a próxima e cada detalhe participa da leitura do todo.</p><a class="text-link" href="https://evviva.com.br/acabamentos/" target="_blank" rel="noopener noreferrer">Ver acabamentos da marca <Arrow /></a></div><div class="philosophy-image"><Image src={images.kitchen} widths={[480, 800, 1200]} sizes="(max-width: 800px) 100vw, 45vw" format="webp" alt="Combinação de madeira, pedra e luz em uma cozinha." loading="lazy" /></div></div></section>
+</Layout>
+<script>
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-material-tab]')];
+  const stage = document.querySelector<HTMLElement>('[data-material-stage]');
+  function activate(tab: HTMLButtonElement) {
+    tabs.forEach(item => { const active = item === tab; item.setAttribute('aria-selected', String(active)); item.tabIndex = active ? 0 : -1; const panel = document.getElementById(item.getAttribute('aria-controls') ?? ''); if (panel) panel.hidden = !active; });
+    if (stage) stage.dataset.materialStage = tab.dataset.materialTab;
+  }
+  tabs.forEach((tab, index) => { tab.addEventListener('click', () => activate(tab)); tab.addEventListener('keydown', event => { let target = index; if (event.key === 'ArrowRight') target = (index + 1) % tabs.length; else if (event.key === 'ArrowLeft') target = (index - 1 + tabs.length) % tabs.length; else if (event.key === 'Home') target = 0; else if (event.key === 'End') target = tabs.length - 1; else return; event.preventDefault(); tabs[target].focus(); activate(tabs[target]); }); });
+</script>

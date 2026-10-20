@@ -1,0 +1,14 @@
+---
+interface Props { light?: boolean; }
+const { light = false } = Astro.props;
+---
+<a class:list={['evviva-brand', { 'evviva-brand-light': light }]} href="/" aria-label="Evviva — início">
+  <img src={light ? '/brand/logo-evviva-branco.svg' : '/brand/logo-rodape.svg'} width={light ? 192 : 236} height={light ? 32 : 45} alt="Evviva" decoding="async" />
+</a>
+<style>
+  .evviva-brand { display: inline-flex; align-items: center; flex-shrink: 0; align-self: center; width: 192px; padding-block: 10px; }
+  .evviva-brand img { display: block; width: 100%; height: auto; }
+  .evviva-brand:not(.evviva-brand-light) img { mix-blend-mode: multiply; }
+  :global(.footer-top) .evviva-brand { align-self: start; }
+  @media (max-width: 600px) { .evviva-brand { width: 156px; } }
+</style>

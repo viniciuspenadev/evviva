@@ -1,0 +1,21 @@
+---
+import Arrow from './Arrow.astro';
+import { site } from '../data/site';
+---
+<dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title" data-whatsapp={site.whatsapp}>
+  <div class="contact-shell">
+    <button type="button" class="icon-button close-button dialog-close" data-close-contact aria-label="Fechar agendamento">×</button>
+    <div class="contact-intro"><p class="eyebrow">Comece pelo que é seu</p><h2 id="contact-title">Vamos dar forma<br />à sua ideia.</h2><p>Conte um pouco sobre o que você imagina para a sua casa.</p><p class="preview-disclosure">Prévia do atendimento. Nenhuma informação será enviada ou armazenada.</p></div>
+    <form id="contact-form">
+      <div class="form-grid"><label>Como podemos chamar você?<input name="name" autocomplete="name" placeholder="Seu nome" required minlength="2" maxlength="80" /></label><label>Seu WhatsApp<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required minlength="10" maxlength="22" /></label></div>
+      <label>Qual ambiente você tem em mente?<select name="environment" required><option value="" disabled selected>Selecione um ambiente</option><option>Cozinha</option><option>Living</option><option>Closet ou dormitório</option><option>Casa completa</option><option>Outro ambiente</option></select></label>
+      <label>O que gostaria de compartilhar? <span class="optional">Opcional</span><textarea name="message" rows="3" maxlength="1200" placeholder="Seu momento, suas ideias, o que é importante para você..."></textarea></label>
+      <p class="form-privacy">Ao preparar a mensagem, você apenas visualiza um resumo nesta página. <a href="/privacidade/">Saiba mais</a>.</p>
+      <button type="submit" class="button button-dark">Preparar minha conversa <Arrow /></button>
+    </form>
+    <div class="contact-review" id="contact-review" hidden tabindex="-1" aria-live="polite"><p class="eyebrow">Seu primeiro passo</p><h3>Uma ideia começa<br />a ganhar forma.</h3><dl><div><dt>Nome</dt><dd data-review-name></dd></div><div><dt>WhatsApp</dt><dd data-review-phone></dd></div><div><dt>Ambiente</dt><dd data-review-environment></dd></div><div data-review-message-row hidden><dt>Sua ideia</dt><dd data-review-message></dd></div></dl><p data-review-note>Este resumo é uma demonstração. Sua solicitação não foi enviada. Encontre uma loja para iniciar o atendimento.</p><div class="review-actions"><a class="button button-dark" id="review-destination" href={site.storeLocator} target="_blank" rel="noopener noreferrer">Encontrar uma loja <Arrow /></a><button type="button" class="text-link" data-back-form>Editar minha mensagem <Arrow /></button></div></div>
+  </div>
+</dialog>
+<script>
+  import '../scripts/contact';
+</script>

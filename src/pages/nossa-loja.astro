@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import { process } from '../data/content';
+import { site } from '../data/site';
+import { images } from '../data/images';
+---
+<Layout title="A experiência na loja — Evviva" description="Um encontro para falar sobre a sua casa, explorar materiais e descobrir as possibilidades do seu projeto.">
+  <section class="page-heading container"><p class="eyebrow">A experiência Evviva</p><h1>Toda casa começa<br /><em>com um encontro.</em></h1><p>Olhar de perto. Perceber as texturas. Conversar sobre o que faz sentido para você.</p></section>
+  <section class="store-visual container"><Image src={images.living} widths={[640, 960, 1440]} sizes="90vw" format="webp" quality={90} alt="Living com sofá claro, madeira e luz natural." loading="eager" /></section>
+  <section class="section"><div class="container detail-intention"><div><p class="eyebrow">Tempo para conhecer</p><h2>Mais do que escolher.<br />Sentir as possibilidades.</h2></div><div><p>A visita à loja é uma oportunidade para aproximar ideias, conhecer materiais e conversar sobre os ambientes da sua casa.</p><p>Traga suas referências, o que você já imaginou e as perguntas que ainda estão em aberto. O projeto pode começar por aí.</p><button class="button button-dark" type="button" data-open-contact>Agendar uma conversa <Arrow /></button><a class="text-link store-locator" href={site.storeLocator} target="_blank" rel="noopener noreferrer">Encontrar uma loja Evviva <Arrow /></a></div></div></section>
+  <section class="section process-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">Um processo de escuta e escolhas</p><h2>Da ideia ao próximo passo.</h2></div></div><ol class="process-grid">{process.map((item, index) => <li><span class="process-number">0{index + 1}</span><h3>{item.title}</h3><p>{item.description}</p></li>)}</ol></div></section>
+</Layout>

@@ -1,0 +1,40 @@
+---
+import Arrow from './Arrow.astro';
+import { surform } from '../data/surform';
+---
+<header class="site-header surform-header"><div class="header-inner">
+  <a class="wordmark surform-wordmark" href="/surform-ssm/" aria-label="SURFORM — início">SURFORM</a>
+  <nav class="surform-nav" aria-label="Navegação SURFORM">{surform.navigation.map(item => <a href={item.href}>{item.label}</a>)}</nav>
+  <a class="surform-return" href="/#ambientes">Voltar à Evviva ↗</a>
+  <a class="button button-dark surform-header-cta" href={surform.instagram} target="_blank" rel="noopener noreferrer">Conhecer a SURFORM <Arrow /></a>
+  <button class="menu-toggle surform-menu-toggle" type="button" aria-label="Abrir menu SURFORM" aria-expanded="false" aria-controls="surform-menu" data-surform-menu-open><span></span><span></span></button>
+</div></header>
+<dialog class="mobile-menu" id="surform-menu" aria-label="Menu SURFORM"><div class="menu-top"><a class="wordmark surform-wordmark" href="/surform-ssm/">SURFORM</a><button type="button" class="icon-button close-button" aria-label="Fechar menu SURFORM" data-surform-menu-close>×</button></div><nav aria-label="Navegação SURFORM no celular">{surform.navigation.map((item, index) => <a href={item.href}><span class="eyebrow">0{index + 1}</span>{item.label}<Arrow /></a>)}</nav><div class="menu-bottom"><p>Superfícies. Possibilidades. SURFORM.</p><a class="button button-dark" href={surform.instagram} target="_blank" rel="noopener noreferrer">Ver o perfil da SURFORM <Arrow /></a><a class="surform-menu-return" href="/#ambientes">Voltar à Evviva ↗</a></div></dialog>
+<script>
+  const surformMenu = document.querySelector<HTMLDialogElement>('#surform-menu');
+  const surformTrigger = document.querySelector<HTMLButtonElement>('[data-surform-menu-open]');
+  surformTrigger?.addEventListener('click', () => {
+    surformMenu?.showModal();
+    surformTrigger.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('dialog-open');
+  });
+  surformMenu?.querySelector('[data-surform-menu-close]')?.addEventListener('click', () => surformMenu.close());
+  surformMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => surformMenu.close()));
+  surformMenu?.addEventListener('close', () => {
+    surformTrigger?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('dialog-open');
+  });
+</script>
+<style>
+  .surform-wordmark { letter-spacing: .22em; font-size: 26px; }
+  .surform-nav { display: flex; flex: 1; justify-content: flex-end; gap: clamp(18px, 2vw, 32px); }
+  .surform-nav a { font-size: 12px; padding-block: 12px; }
+  .surform-nav a:hover { text-decoration: underline; text-underline-offset: 6px; }
+  .surform-return { font-size: 10px; color: var(--muted); white-space: nowrap; }
+  .surform-header-cta { min-height: 46px; padding: 12px 18px; gap: 18px; font-size: 11px; }
+  .surform-header-cta .arrow-icon { width: 18px; }
+  .surform-menu-return { display: inline-block; padding-block: 24px 0; font-size: 12px; }
+  @media(max-width: 1200px) { .surform-return { display: none; } }
+  @media(max-width: 1100px) { .surform-nav { display: none; } .surform-header-cta { margin-left: auto; } }
+  @media(max-width: 600px) { .surform-wordmark { font-size: 22px; letter-spacing: .2em; } .surform-header-cta { display: none; } }
+</style>
