@@ -1,0 +1,34 @@
+---
+import { Image, getImage } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import { portfolioCategories, portfolioCollections, portfolioSequence } from '../data/portfolio';
+import '../styles/portfolio.css';
+
+const photos = await Promise.all(portfolioSequence.map(async photo => ({ ...photo, full: await getImage({ src: photo.image, width: Math.min(photo.image.width, 1800), format: 'webp', quality: 90 }) })));
+---
+<Layout title="Portfólio Evviva — Ambientes e coleções" description="Explore o acervo oficial Evviva por ambiente ou coleção: Stima, Persona, Versa, Evvai, Ino, Ino D.O.C., Leggera, Sonata, Aria e O Espírito do Lugar.">
+  <section class="container portfolio-heading"><div><p class="eyebrow">Portfólio Evviva</p><h1>Design para<br /><em>viver de perto.</em></h1></div><div class="portfolio-intro"><p>Ambientes que revelam possibilidades.<br />Detalhes que dão identidade ao espaço.</p><p>Explore o acervo oficial da Evviva por ambiente ou coleção e encontre o ponto de partida para o seu projeto.</p><span>{photos.length} imagens · {portfolioCategories.length} categorias · {portfolioCollections.length} coleções</span></div></section>
+  <section class="portfolio-explorer" aria-label="Galeria do acervo Evviva" data-portfolio>
+    <div class="portfolio-toolbar"><div class="container">
+      <div class="portfolio-modes" role="group" aria-label="Explorar portfólio"><button type="button" data-portfolio-mode="ambientes" aria-pressed="true">Por ambiente</button><button type="button" data-portfolio-mode="colecoes" aria-pressed="false">Por coleção</button></div>
+      <div class="portfolio-filters" role="group" aria-label="Filtrar portfólio por categoria" data-portfolio-filter-group="ambientes"><button type="button" data-portfolio-filter="todos" aria-pressed="true">Todos</button>{portfolioCategories.map(category => <button type="button" id={category.id} data-portfolio-filter={category.id} aria-pressed="false">{category.title}</button>)}</div>
+      <div class="portfolio-filters" role="group" aria-label="Filtrar portfólio por coleção" data-portfolio-filter-group="colecoes" hidden><button type="button" id="colecoes" data-portfolio-filter="colecoes" aria-pressed="false">Todas as coleções</button>{portfolioCollections.map(collection => <button type="button" id={`colecao-${collection.id}`} data-portfolio-filter={`colecao-${collection.id}`} aria-pressed="false">{collection.name}</button>)}</div>
+      <div class="portfolio-meta"><p data-portfolio-status role="status" aria-live="polite" aria-atomic="true">12 de {photos.length} imagens · Todo o acervo</p><span>Selecione uma imagem para ampliar <Arrow /></span></div>
+    </div></div>
+    <div class="container"><div class="portfolio-grid" id="portfolio-grid">{photos.map((photo, index) => <figure class:list={['portfolio-item', { 'portfolio-sample': photo.category === 'acabamentos' }]} data-portfolio-item data-category={photo.category} data-collections={photo.collectionIds.join(' ')} data-photo-id={photo.id} hidden={index >= 12}>
+      <a class="portfolio-image-link" href={photo.full.src} data-portfolio-open data-title={photo.title} data-alt={photo.alt} data-category-title={photo.categoryTitle} data-source={photo.sourcePage} aria-label={`Ampliar: ${photo.title}`} aria-haspopup="dialog">
+        <Image src={photo.image} widths={photo.category === 'acabamentos' ? [240, 480] : [480, 960]} sizes="(max-width: 600px) 90vw, (max-width: 1000px) 45vw, 30vw" format="webp" quality={85} alt={photo.alt} loading="lazy" />
+        <span class="portfolio-zoom" aria-hidden="true">+</span>
+      </a>
+      <figcaption><div><p>{photo.categoryTitle}</p><h2>{photo.title}</h2></div><span>Evviva</span></figcaption>
+    </figure>)}</div><div class="portfolio-more"><button type="button" class="button button-dark" data-portfolio-more aria-controls="portfolio-grid">Ver mais imagens <Arrow direction="down" /></button></div><p class="portfolio-origin">Imagens do acervo oficial Evviva. Acabamentos e disponibilidade são definidos no desenvolvimento do projeto.</p></div>
+    <dialog class="portfolio-lightbox" aria-label="Imagem ampliada do portfólio Evviva" data-portfolio-dialog>
+      <div class="portfolio-lightbox-top"><span data-lightbox-counter></span><button type="button" class="icon-button" aria-label="Fechar imagem ampliada" data-lightbox-close>×</button></div>
+      <div class="portfolio-lightbox-stage"><button type="button" class="portfolio-lightbox-arrow" aria-label="Imagem anterior" data-lightbox-prev><Arrow /></button><img src={photos[0].full.src} alt={photos[0].alt} width={photos[0].full.attributes.width} height={photos[0].full.attributes.height} loading="lazy" decoding="async" data-lightbox-image /><button type="button" class="portfolio-lightbox-arrow" aria-label="Próxima imagem" data-lightbox-next><Arrow /></button></div>
+      <div class="portfolio-lightbox-caption"><div><p class="eyebrow" data-lightbox-category></p><h2 data-lightbox-title></h2></div><a href="https://evviva.com.br/product/cozinhas/" target="_blank" rel="noopener noreferrer" data-lightbox-source>Acervo oficial Evviva ↗</a></div>
+    </dialog>
+  </section>
+  <noscript><style>.portfolio-item[hidden]{display:block!important}.portfolio-toolbar,.portfolio-more{display:none!important}</style></noscript>
+</Layout>
+<script>import '../scripts/portfolio';</script>

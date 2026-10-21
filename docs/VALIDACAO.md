@@ -109,3 +109,57 @@ Capturas adicionais em `docs/preview/`: `ambientes-surform-desktop.png`, `ambien
 - `npm run build`: 31 arquivos checados, zero erros/avisos. `npm run verify`: 11 páginas, 329 referências locais, 58 instâncias de imagem, 78 variantes WebP; aprovado.
 - Docker, Nginx e GitHub CLI não estão disponíveis no PATH deste ambiente. A imagem não foi construída/executada localmente; a validação Linux/HTTP do contêiner permanece para o primeiro build no EasyPanel ou uma máquina com Docker. Comandos e conferência em `docs/DEPLOY_EASYPANEL.md`.
 - Nenhum commit, push, repositório remoto, DNS ou serviço externo foi criado/alterado. O formulário de apresentação mantém seu funcionamento sem envio.
+
+## Revisão — acervo oficial e preto chumbo (21/10/2026)
+
+- Importadas todas as imagens encontradas nas sete categorias oficiais: cozinhas 19, dormitórios 5, living 11, banho 8, corporativo 9, acessórios 25, acabamentos 88. São 165 URLs distintas, com arquivos locais e origem registrada no manifesto.
+- Criada `/portfolio/`, integrada ao menu, rodapé e home. Filtros por categoria, exibição em grupos de 12, imagens ampliadas com setas e teclado, Escape, foco restaurado e bloqueio de rolagem do fundo. Origem Evviva identificada; nenhuma atribuição de execução à unidade local ou à SURFORM.
+- Seleção com três fotos oficiais na home após a galeria imersiva. Três cartões de serviços preservados.
+- Paleta atualizada de verde musgo para preto chumbo `#242426`, com neutros correspondentes para textos, hover, bordas, overlays e controles, inclusive na página SURFORM. Logos oficiais preservados.
+- Todos os 165 arquivos tiveram metadados lidos; WebP responsivo e versões ampliadas geradas localmente. As fotografias não dependem de hotlink do site oficial.
+- `npm run build`: 36 arquivos checados, zero erros/avisos/sugestões; 12 páginas. `npm run verify`: aprovado, 725 referências locais, 230 instâncias de imagem e 645 variantes WebP. Canonical da nova página conferido para o domínio temporário.
+- Filtros conferidos no navegador com os totais acima. Carregamento adicional de acabamentos passou de 12 para 24; cozinhas chegou a 19 e ocultou o botão. Ampliação, próxima foto, seta do teclado, Escape, retorno do foco e link de origem confirmados.
+- 320, 390, 820 e 1440 px sem transbordamento horizontal. Galeria em uma, duas ou três colunas conforme a tela; visualizador centralizado, sem transbordamento no celular. Fundo e botão confirmados em `rgb(36, 36, 38)`; link sobre fundo escuro em marfim.
+- Capturas: `portfolio-oficial-desktop.png`, `portfolio-oficial-mobile.png` e `portfolio-home-chumbo-desktop.png`, em `docs/preview/`. Detalhes de importação e fontes em `docs/ACERVO_EVVIVA.md`.
+- Preview local reiniciado na porta 4321. Nenhum push ou deploy externo realizado. Configuração Docker existente inclui os novos arquivos automaticamente.
+
+## Revisão — família ultrapassando o recorte (21/10/2026)
+
+- A prévia com família no living foi aprovada e convertida em imagem de produção com transparência real. As cabeças dos pais ultrapassam o limite superior da foto, com cantos arredondados no ambiente e sem texto embutido.
+- Imagem aplicada na seção `#jeito-de-viver` da home por `src/components/FamilyScene.astro`. Foto anterior substituída somente nessa seção, com texto e acesso à experiência preservados. Fundo marfim e composição adaptada para uma coluna no celular.
+- Original PNG de 1481 × 1062 px preservado no workspace; quatro variantes WebP responsivas com alfa geradas pelo Astro. Ambientação mantida fora do portfólio oficial da Evviva. Origem, ferramenta e prompt completo em `docs/IMAGEM_FAMILIA.md`.
+- `npm run build`: 37 arquivos checados, sem erros/avisos/sugestões; 12 páginas. `npm run verify`: aprovado; 725 referências locais, 230 instâncias de imagem e 645 variantes WebP.
+- Navegador: 320, 390, 820 e 1440 px sem transbordamento horizontal. Imagem carregada e proporção preservada, sem corte nas cabeças; transparência integrada ao fundo. Rodadas finais sem erros/avisos no navegador.
+- Capturas em `docs/preview/familia-recorte-desktop.png` e `docs/preview/familia-recorte-mobile.png`.
+
+## Revisão — coleções em arco e perspectiva (21/10/2026)
+
+- A lista estática da seção “Possibilidades que se encontram” foi substituída por composição editorial com fotografias oficiais de Persona, Stima, Versa e Evvai. Referência WheelCarousel fornecida pelo cliente adaptada à identidade existente em Astro, CSS e TypeScript, sem novas dependências.
+- Seletor segue arco vertical com deslocamento em profundidade, rotação e escala. Foto, legenda, descrição, contador e link acompanham a seleção. Fotos oficiais preservadas em `src/assets/collections/`; fontes em `docs/COLECOES_INTERATIVAS.md`.
+- Reprodução automática observada no navegador. Clique nas setas e nos nomes, arraste vertical com mouse, setas de teclado e Home/End conferidos; apenas uma coleção/foto ativa por vez. Escolha manual pausa a reprodução. Código contempla pausa por foco, hover, aba oculta, seletor fora da tela e preferência de movimento reduzido.
+- Layout conferido em 320, 390, 820 e 1440 px, sem transbordamento horizontal. No celular, foto e seletor ficam empilhados; código usa arraste horizontal para preservar rolagem vertical. Rolagem normal do mouse preservada quando o seletor não está focado.
+- `npm run build`: 39 arquivos checados, zero erros/avisos/sugestões, 12 páginas. `npm run verify`: aprovado, 732 referências locais, 234 instâncias de imagem e 660 variantes WebP. Última consulta ao console do navegador sem erros ou avisos.
+- Capturas em `docs/preview/colecoes-arco-desktop.png` e `docs/preview/colecoes-arco-mobile.png`. Alteração disponível somente no preview local; deploy externo não realizado.
+
+## Revisão — composição clean das coleções (21/10/2026)
+
+- Removidos textos de apoio, legendas, números, instrução de gesto e dois CTAs textuais. Conteúdo visual reduzido a fotografia, título e nomes. Fotografia agora é o único link para detalhes, com seta discreta e nome acessível atualizado pela seleção. Controles de navegação e pausa preservados.
+- Fotografia ampliada e título integrado à coluna do seletor. No celular, título, foto e seletor ficam empilhados. Stima abre a apresentação. Rotação refeita como cilindro vertical, com recuo em profundidade e inclinação no eixo X; suavização ampliada e entrada das imagens com transformação de enquadramento.
+- Seleção por seta de teclado e botão conferida com atualização da fotografia, nome e destino do link. Uma foto e um indicador ativos por vez. 320, 390, 820 e 1440 px sem rolagem horizontal; captura móvel mostra toda a seção em uma tela. Console sem erros/avisos na conferência final.
+- `npm run build`: 39 arquivos checados, zero erros/avisos/sugestões, 12 páginas. `npm run verify`: aprovado; 731 referências locais, 234 instâncias de imagem e 660 variantes WebP.
+- Capturas finais: `docs/preview/colecoes-clean-desktop.png` e `docs/preview/colecoes-clean-mobile.png`. Preview local preservado.
+
+## Revisão — foto contínua, degradê e card integrado (21/10/2026)
+
+- A fotografia agora alcança as bordas esquerda, superior e inferior da seção, com transição horizontal para o fundo chumbo. Área de imagem estendida até 62% para formar o degradê; card na metade direita com superfície translúcida, borda sutil e desfoque. No celular, fotografia superior e sobreposição do card com degradê vertical.
+- Barra de navegação, anterior/próxima e indicadores de posição removidos do HTML, CSS e script. Clique nos nomes, arraste e teclado preservados. Pausa/retomada por Espaço e botão acessível que aparece apenas com foco de teclado.
+- Navegador confirmou imagem iniciando em x=0 e com altura igual à seção no desktop. Zero elementos da antiga guia de navegação. Seleção via teclado atualizou foto e nome acessível do link. Layouts de 320, 390, 820 e 1440 px sem transbordamento horizontal; console final sem erros/avisos.
+- `npm run build`: 39 arquivos checados, zero erros/avisos/sugestões, 12 páginas. `npm run verify`: aprovado; 730 referências locais, 234 instâncias de imagem e 659 variantes WebP. Imagens responsivas ajustadas à nova dimensão, sem ampliar além da largura original.
+- Capturas: `docs/preview/colecoes-degrade-desktop.png` e `docs/preview/colecoes-degrade-mobile.png`. Nenhum deploy externo.
+
+## Revisão — retirada da caixa do seletor (21/10/2026)
+
+- Removidos fundo, borda, sombra, arredondamento e desfoque do contêiner do título/seletor, inclusive no CSS móvel. Espaçamento, foto, degradê e animação preservados.
+- Conferência visual em desktop e 390 px; navegador confirmou fundo transparente, imagem de fundo/sombra/desfoque ausentes e borda de 0 px. Celular sem transbordamento horizontal.
+- Build e verificador aprovados: 12 páginas, 730 referências locais, 234 instâncias de imagem e 659 variantes WebP.
+- Capturas: `docs/preview/colecoes-sem-caixa-desktop.png` e `docs/preview/colecoes-sem-caixa-mobile.png`.

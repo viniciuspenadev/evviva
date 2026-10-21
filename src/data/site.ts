@@ -16,6 +16,7 @@ export const site = {
 
 export const navigation = [
   { label: 'Ambientes', href: '/#ambientes' },
+  { label: 'Portfólio', href: '/portfolio/' },
   { label: 'Coleções', href: '/colecoes/' },
   { label: 'Nossa loja', href: '/nossa-loja/' },
   { label: 'Para arquitetos', href: '/arquitetos/' },

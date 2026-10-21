@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import Arrow from './Arrow.astro';
+import { portfolioHighlights } from '../data/portfolio';
+---
+<section id="portfolio" class="portfolio-preview section" aria-labelledby="portfolio-preview-title">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Portfólio Evviva</p><h2 id="portfolio-preview-title">Espaços que inspiram.<br /><em>Detalhes que ficam.</em></h2></div><div class="section-aside"><p>Uma seleção do acervo da marca.<br />Novas perspectivas para a sua casa.</p><a class="text-link" href="/portfolio/">Explorar o portfólio <Arrow /></a></div></div>
+    <div class="portfolio-preview-grid">{portfolioHighlights.map(photo => <a class="portfolio-preview-card" href={`/portfolio/#${photo.category}`}>
+      <div class="portfolio-preview-image"><Image src={photo.image} widths={[400, 640, 960]} sizes="(max-width: 700px) 90vw, 30vw" format="webp" quality={85} alt={photo.alt} loading="lazy" /><span>Acervo Evviva</span></div>
+      <div class="portfolio-preview-label"><h3>{photo.categoryTitle}</h3><Arrow /></div>
+    </a>)}</div>
+    <p class="portfolio-preview-note">Cozinhas, dormitórios, living, banho, corporativo, acessórios e acabamentos.</p>
+  </div>
+</section>
+<style>
+  .portfolio-preview { background: var(--charcoal); color: var(--ivory); }
+  .portfolio-preview .eyebrow { color: #c7b9a7; }
+  .portfolio-preview .section-aside { color: #d2cec6; }
+  .portfolio-preview .text-link { color: var(--ivory); }
+  .portfolio-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; align-items: start; }
+  .portfolio-preview-card:nth-child(2) { margin-top: 70px; }
+  .portfolio-preview-image { position: relative; overflow: hidden; aspect-ratio: 4/5; background: #303033; }
+  .portfolio-preview-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
+  .portfolio-preview-card:hover img { transform: scale(1.035); }
+  .portfolio-preview-image > span { position: absolute; left: 18px; bottom: 18px; background: rgb(25 25 28 / .7); padding: 6px 10px; font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+  .portfolio-preview-label { display: flex; align-items: center; justify-content: space-between; padding-block: 20px; border-bottom: 1px solid #555558; }
+  .portfolio-preview-label h3 { font-size: clamp(25px, 2.4vw, 36px); }
+  .portfolio-preview-label :global(.arrow-icon) { width: 24px; transform: rotate(-35deg); }
+  .portfolio-preview-note { margin-top: 34px; color: #bdb9b2; font-size: 11px; line-height: 1.7; }
+  @media (max-width: 700px) { .portfolio-preview-grid { grid-template-columns: 1fr; gap: 30px; } .portfolio-preview-card:nth-child(2) { margin: 0; } .portfolio-preview-image { aspect-ratio: 5/4; } .portfolio-preview-label h3 { font-size: 30px; } }
+  @media (prefers-reduced-motion: reduce) { .portfolio-preview-image img { transition: none; } }
+</style>

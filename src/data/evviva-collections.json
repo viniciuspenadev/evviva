@@ -1,0 +1,1339 @@
+{
+  "importedAt": "2026-10-21",
+  "collections": [
+    {
+      "id": "stima",
+      "name": "Stima",
+      "slug": "stima",
+      "label": "A arquitetura em continuidade",
+      "description": "Portas e revestimentos que exploram a integração entre superfícies, materiais e ambientes.",
+      "url": "https://evviva.com.br/collections/stima/",
+      "coverPhotoId": "colecao-stima-01",
+      "photoIds": [
+        "colecao-stima-01",
+        "colecao-stima-02",
+        "colecao-stima-03",
+        "colecao-stima-04",
+        "colecao-stima-05",
+        "colecao-stima-06",
+        "colecao-stima-07",
+        "colecao-stima-08",
+        "colecao-stima-09",
+        "colecao-stima-10",
+        "colecao-stima-11",
+        "colecao-stima-12",
+        "colecao-stima-13",
+        "colecao-stima-14",
+        "colecao-stima-15",
+        "colecao-stima-16",
+        "colecao-stima-17",
+        "colecao-stima-18",
+        "colecao-stima-19",
+        "colecao-stima-20"
+      ]
+    },
+    {
+      "id": "persona",
+      "name": "Persona",
+      "slug": "persona",
+      "label": "Liberdade para criar",
+      "description": "O sistema construtivo peça a peça amplia as possibilidades de personalização e adaptação à arquitetura.",
+      "url": "https://evviva.com.br/collections/persona/",
+      "coverPhotoId": "colecao-persona-01",
+      "photoIds": [
+        "colecao-persona-01",
+        "colecao-persona-02"
+      ]
+    },
+    {
+      "id": "versa",
+      "name": "Versa",
+      "slug": "versa",
+      "label": "Possibilidades em movimento",
+      "description": "Uma estrutura que permite reposicionar módulos e explorar novas composições para diferentes espaços.",
+      "url": "https://evviva.com.br/collections/versa/",
+      "coverPhotoId": "colecao-versa-01",
+      "photoIds": [
+        "colecao-versa-01",
+        "colecao-versa-02",
+        "colecao-versa-03",
+        "colecao-versa-04",
+        "colecao-versa-05",
+        "colecao-versa-06",
+        "colecao-versa-07",
+        "colecao-versa-08",
+        "colecao-versa-09",
+        "colecao-versa-10",
+        "colecao-versa-11"
+      ]
+    },
+    {
+      "id": "evvai",
+      "name": "Evvai",
+      "slug": "evvai",
+      "label": "A presença do essencial",
+      "description": "Buffet, bar, mesa de centro e móvel para TV assinados por Gustavo Bertolini, em madeira, pedra e metal.",
+      "url": "https://evviva.com.br/collections/evvai/",
+      "coverPhotoId": "colecao-evvai-01",
+      "photoIds": [
+        "colecao-evvai-01",
+        "colecao-evvai-02",
+        "colecao-evvai-03",
+        "colecao-evvai-04",
+        "colecao-evvai-05",
+        "colecao-evvai-06",
+        "colecao-evvai-07",
+        "colecao-evvai-08",
+        "colecao-evvai-09",
+        "colecao-evvai-10",
+        "colecao-evvai-11",
+        "colecao-evvai-15",
+        "colecao-evvai-16",
+        "colecao-evvai-17",
+        "colecao-evvai-18",
+        "colecao-evvai-19",
+        "colecao-evvai-20",
+        "colecao-evvai-21",
+        "colecao-evvai-22",
+        "colecao-evvai-23",
+        "colecao-evvai-24",
+        "colecao-evvai-25",
+        "colecao-evvai-26",
+        "colecao-evvai-27",
+        "colecao-evvai-28",
+        "colecao-evvai-29",
+        "colecao-evvai-30"
+      ]
+    },
+    {
+      "id": "ino",
+      "name": "Ino",
+      "slug": "ino",
+      "label": "A expressão do aço",
+      "description": "Cozinhas com portas e tamponamentos em aço inox 304, que exploram a linguagem do material e a funcionalidade do espaço gourmet.",
+      "url": "https://evviva.com.br/collections/ino/",
+      "coverPhotoId": "colecao-ino-01",
+      "photoIds": [
+        "colecao-ino-01",
+        "colecao-ino-02",
+        "colecao-ino-03",
+        "colecao-ino-04"
+      ]
+    },
+    {
+      "id": "ino-doc",
+      "name": "Ino D.O.C.",
+      "slug": "doc",
+      "label": "Precisão em cada encontro",
+      "description": "Uma releitura da Ino que combina desenho minimalista e aço inox 304 no mobiliário.",
+      "url": "https://evviva.com.br/collections/doc/",
+      "coverPhotoId": "colecao-ino-doc-01",
+      "photoIds": [
+        "colecao-ino-doc-01",
+        "colecao-ino-doc-02",
+        "colecao-ino-doc-03",
+        "colecao-ino-doc-04",
+        "colecao-ino-doc-05",
+        "colecao-ino-doc-06"
+      ]
+    },
+    {
+      "id": "leggera",
+      "name": "Leggera",
+      "slug": "leggera",
+      "label": "O desenho acompanha a vida",
+      "description": "A construção permite substituir revestimentos das frentes e laterais, renovando a composição com diferentes materiais e acabamentos.",
+      "url": "https://evviva.com.br/collections/leggera/",
+      "coverPhotoId": "colecao-leggera-01",
+      "photoIds": [
+        "colecao-leggera-01",
+        "colecao-leggera-02",
+        "colecao-leggera-03",
+        "colecao-leggera-04",
+        "colecao-leggera-05",
+        "colecao-leggera-06",
+        "colecao-leggera-07",
+        "colecao-leggera-08",
+        "colecao-leggera-09",
+        "colecao-leggera-10",
+        "colecao-leggera-11",
+        "colecao-leggera-12"
+      ]
+    },
+    {
+      "id": "sonata",
+      "name": "Sonata",
+      "slug": "sonata",
+      "label": "Composições com identidade",
+      "description": "Sistema que amplia a personalização com diferentes combinações de frentes, materiais e acabamentos.",
+      "url": "https://evviva.com.br/collections/sonata/",
+      "coverPhotoId": "colecao-sonata-01",
+      "photoIds": [
+        "colecao-sonata-01"
+      ]
+    },
+    {
+      "id": "aria",
+      "name": "Aria",
+      "slug": "aria",
+      "label": "Leveza e transparência",
+      "description": "Desenvolvida a partir do Sistema Persona, a coleção explora o vidro em peças personalizáveis que valorizam seu interior.",
+      "url": "https://evviva.com.br/collections/aria/",
+      "coverPhotoId": "colecao-aria-01",
+      "photoIds": [
+        "colecao-aria-01",
+        "colecao-aria-03"
+      ]
+    },
+    {
+      "id": "o-espirito-do-lugar",
+      "name": "O Espírito do Lugar",
+      "slug": "o-espirito-do-lugar",
+      "label": "Matéria, território e memória",
+      "description": "Nicole Tomazi e Sergio Cabral aproximam o design contemporâneo da técnica artesanal da dressa, uma trama em palha de trigo ligada à história da região de origem da Evviva.",
+      "url": "https://evviva.com.br/collections/o-espirito-do-lugar/",
+      "coverPhotoId": "colecao-o-espirito-do-lugar-01",
+      "photoIds": [
+        "colecao-o-espirito-do-lugar-01",
+        "colecao-o-espirito-do-lugar-02",
+        "colecao-o-espirito-do-lugar-03",
+        "colecao-o-espirito-do-lugar-04",
+        "colecao-o-espirito-do-lugar-05",
+        "colecao-o-espirito-do-lugar-06",
+        "colecao-o-espirito-do-lugar-07",
+        "colecao-o-espirito-do-lugar-08",
+        "colecao-o-espirito-do-lugar-09"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "id": "colecao-stima-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 01",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-stima-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03222.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 02",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-stima-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03230.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 03",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 03.",
+      "file": "colecao-stima-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03244.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 04",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 04.",
+      "file": "colecao-stima-04.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03259.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-05",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 05",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 05.",
+      "file": "colecao-stima-05.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03265.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-06",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 06",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 06.",
+      "file": "colecao-stima-06.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03270.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-07",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 07",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 07.",
+      "file": "colecao-stima-07.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03391.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-08",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 08",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 08.",
+      "file": "colecao-stima-08.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03405.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-09",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 09",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 09.",
+      "file": "colecao-stima-09.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03413.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-10",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 10",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 10.",
+      "file": "colecao-stima-10.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03420.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-11",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 11",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 11.",
+      "file": "colecao-stima-11.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03491.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-12",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 12",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 12.",
+      "file": "colecao-stima-12.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03585.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-13",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 13",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 13.",
+      "file": "colecao-stima-13.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03613.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-14",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 14",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 14.",
+      "file": "colecao-stima-14.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03639.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-15",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 15",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 15.",
+      "file": "colecao-stima-15.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03653.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-16",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 16",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 16.",
+      "file": "colecao-stima-16.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03696.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-17",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 17",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 17.",
+      "file": "colecao-stima-17.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03725.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-18",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 18",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 18.",
+      "file": "colecao-stima-18.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03747.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-19",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 19",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 19.",
+      "file": "colecao-stima-19.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03821.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-stima-20",
+      "category": "colecoes",
+      "collectionIds": [
+        "stima"
+      ],
+      "title": "Stima / 20",
+      "alt": "Coleção Stima, acervo oficial Evviva, imagem 20.",
+      "file": "colecao-stima-20.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/02/A7R03822.jpg",
+      "sourcePage": "https://evviva.com.br/collections/stima/"
+    },
+    {
+      "id": "colecao-persona-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "persona"
+      ],
+      "title": "Persona / 01",
+      "alt": "Coleção Persona, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-persona-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Rogerio-Maranhao_2023_evv_0-0331.jpg",
+      "sourcePage": "https://evviva.com.br/collections/persona/"
+    },
+    {
+      "id": "colecao-persona-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "persona"
+      ],
+      "title": "Persona / 02",
+      "alt": "Coleção Persona, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-persona-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Rogerio-Maranhao_2023_evv_0-0356.jpg",
+      "sourcePage": "https://evviva.com.br/collections/persona/"
+    },
+    {
+      "id": "colecao-versa-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 01",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-versa-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7385-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 02",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-versa-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF3936-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 03",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 03.",
+      "file": "colecao-versa-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF3949-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 04",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 04.",
+      "file": "colecao-versa-04.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF4197-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-05",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 05",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 05.",
+      "file": "colecao-versa-05.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF4230.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-06",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 06",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 06.",
+      "file": "colecao-versa-06.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF7375-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-07",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 07",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 07.",
+      "file": "colecao-versa-07.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF7385-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-08",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 08",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 08.",
+      "file": "colecao-versa-08.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF7806.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-09",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 09",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 09.",
+      "file": "colecao-versa-09.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF7815.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-10",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 10",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 10.",
+      "file": "colecao-versa-10.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF7867.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-versa-11",
+      "category": "colecoes",
+      "collectionIds": [
+        "versa"
+      ],
+      "title": "Versa / 11",
+      "alt": "Coleção Versa, acervo oficial Evviva, imagem 11.",
+      "file": "colecao-versa-11.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/DSCF8721-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/versa/"
+    },
+    {
+      "id": "colecao-evvai-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 01",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-evvai-01.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00883-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 02",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-evvai-02.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00913-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 03",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 03.",
+      "file": "colecao-evvai-03.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00926-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 04",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 04.",
+      "file": "colecao-evvai-04.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00945-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-05",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 05",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 05.",
+      "file": "colecao-evvai-05.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00946-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-06",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 06",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 06.",
+      "file": "colecao-evvai-06.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00947-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-07",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 07",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 07.",
+      "file": "colecao-evvai-07.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00950-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-08",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 08",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 08.",
+      "file": "colecao-evvai-08.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00957-cmyk-aberta-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-09",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 09",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 09.",
+      "file": "colecao-evvai-09.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00957-cmyk-abrindo-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-10",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 10",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 10.",
+      "file": "colecao-evvai-10.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00957-cmyk-fechada-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-11",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 11",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 11.",
+      "file": "colecao-evvai-11.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00958-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-15",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 12",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 12.",
+      "file": "colecao-evvai-15.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00986-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-16",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 13",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 13.",
+      "file": "colecao-evvai-16.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00991-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-17",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 14",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 14.",
+      "file": "colecao-evvai-17.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01002-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-18",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 15",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 15.",
+      "file": "colecao-evvai-18.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01005-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-19",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 16",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 16.",
+      "file": "colecao-evvai-19.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01028-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-20",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 17",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 17.",
+      "file": "colecao-evvai-20.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01035-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-21",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 18",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 18.",
+      "file": "colecao-evvai-21.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01042-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-22",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 19",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 19.",
+      "file": "colecao-evvai-22.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01046-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-23",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 20",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 20.",
+      "file": "colecao-evvai-23.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R01063-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-24",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 21",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 21.",
+      "file": "colecao-evvai-24.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/Still-2025-04-17-111247_1.1.1-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-25",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 22",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 22.",
+      "file": "colecao-evvai-25.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/Still-2025-04-17-111247_1.8.1-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-26",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 23",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 23.",
+      "file": "colecao-evvai-26.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/Still-2025-04-17-111247_1.17.1-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-27",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 24",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 24.",
+      "file": "colecao-evvai-27.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00859-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-28",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 25",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 25.",
+      "file": "colecao-evvai-28.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00864-cmyk-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-29",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 26",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 26.",
+      "file": "colecao-evvai-29.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00866-cmyk-2p-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-evvai-30",
+      "category": "colecoes",
+      "collectionIds": [
+        "evvai"
+      ],
+      "title": "Evvai / 27",
+      "alt": "Coleção Evvai, acervo oficial Evviva, imagem 27.",
+      "file": "colecao-evvai-30.webp",
+      "source": "https://evviva.com.br/wp-content/uploads/2025/06/A7R00866-cmyk-3p-scaled.webp",
+      "sourcePage": "https://evviva.com.br/collections/evvai/"
+    },
+    {
+      "id": "colecao-ino-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino"
+      ],
+      "title": "Ino / 01",
+      "alt": "Coleção Ino, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-ino-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Rogerio-Maranhao_2023_evv_0-0185.jpg",
+      "sourcePage": "https://evviva.com.br/collections/ino/"
+    },
+    {
+      "id": "colecao-ino-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino"
+      ],
+      "title": "Ino / 02",
+      "alt": "Coleção Ino, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-ino-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Renato-Navarro_EVVIVA290322-0015.jpg",
+      "sourcePage": "https://evviva.com.br/collections/ino/"
+    },
+    {
+      "id": "colecao-ino-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino"
+      ],
+      "title": "Ino / 03",
+      "alt": "Coleção Ino, acervo oficial Evviva, imagem 03.",
+      "file": "colecao-ino-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Renato-Navarro_EVVIVA290322-0038.jpg",
+      "sourcePage": "https://evviva.com.br/collections/ino/"
+    },
+    {
+      "id": "colecao-ino-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino"
+      ],
+      "title": "Ino / 04",
+      "alt": "Coleção Ino, acervo oficial Evviva, imagem 04.",
+      "file": "colecao-ino-04.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Rogerio-Maranhao__2023_evv_0-0210.jpg",
+      "sourcePage": "https://evviva.com.br/collections/ino/"
+    },
+    {
+      "id": "colecao-ino-doc-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino-doc"
+      ],
+      "title": "Ino D.O.C. / 01",
+      "alt": "Coleção Ino D.O.C., acervo oficial Evviva, imagem 01.",
+      "file": "colecao-ino-doc-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7113-HDR-min-scaled.jpg",
+      "sourcePage": "https://evviva.com.br/collections/doc/"
+    },
+    {
+      "id": "colecao-ino-doc-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino-doc"
+      ],
+      "title": "Ino D.O.C. / 02",
+      "alt": "Coleção Ino D.O.C., acervo oficial Evviva, imagem 02.",
+      "file": "colecao-ino-doc-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7125-HDR-min-scaled.jpg",
+      "sourcePage": "https://evviva.com.br/collections/doc/"
+    },
+    {
+      "id": "colecao-ino-doc-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino-doc"
+      ],
+      "title": "Ino D.O.C. / 03",
+      "alt": "Coleção Ino D.O.C., acervo oficial Evviva, imagem 03.",
+      "file": "colecao-ino-doc-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7132-min-scaled.jpg",
+      "sourcePage": "https://evviva.com.br/collections/doc/"
+    },
+    {
+      "id": "colecao-ino-doc-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino-doc"
+      ],
+      "title": "Ino D.O.C. / 04",
+      "alt": "Coleção Ino D.O.C., acervo oficial Evviva, imagem 04.",
+      "file": "colecao-ino-doc-04.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7204-HDR-min-scaled.jpg",
+      "sourcePage": "https://evviva.com.br/collections/doc/"
+    },
+    {
+      "id": "colecao-ino-doc-05",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino-doc"
+      ],
+      "title": "Ino D.O.C. / 05",
+      "alt": "Coleção Ino D.O.C., acervo oficial Evviva, imagem 05.",
+      "file": "colecao-ino-doc-05.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7536-min-scaled.jpg",
+      "sourcePage": "https://evviva.com.br/collections/doc/"
+    },
+    {
+      "id": "colecao-ino-doc-06",
+      "category": "colecoes",
+      "collectionIds": [
+        "ino-doc"
+      ],
+      "title": "Ino D.O.C. / 06",
+      "alt": "Coleção Ino D.O.C., acervo oficial Evviva, imagem 06.",
+      "file": "colecao-ino-doc-06.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Marcelo-dos-Santos_7114-min-scaled.jpg",
+      "sourcePage": "https://evviva.com.br/collections/doc/"
+    },
+    {
+      "id": "colecao-leggera-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 01",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-leggera-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4357-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 02",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-leggera-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4396-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 03",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 03.",
+      "file": "colecao-leggera-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4400-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 04",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 04.",
+      "file": "colecao-leggera-04.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4509-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-05",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 05",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 05.",
+      "file": "colecao-leggera-05.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4686.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-06",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 06",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 06.",
+      "file": "colecao-leggera-06.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4709.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-07",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 07",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 07.",
+      "file": "colecao-leggera-07.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4784.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-08",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 08",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 08.",
+      "file": "colecao-leggera-08.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4865-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-09",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 09",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 09.",
+      "file": "colecao-leggera-09.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4912-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-10",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 10",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 10.",
+      "file": "colecao-leggera-10.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4991-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-11",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 11",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 11.",
+      "file": "colecao-leggera-11.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF4994-HDR.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-leggera-12",
+      "category": "colecoes",
+      "collectionIds": [
+        "leggera"
+      ],
+      "title": "Leggera / 12",
+      "alt": "Coleção Leggera, acervo oficial Evviva, imagem 12.",
+      "file": "colecao-leggera-12.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/11/Ezequiele-Panizzi-_-DSCF5066.jpg",
+      "sourcePage": "https://evviva.com.br/collections/leggera/"
+    },
+    {
+      "id": "colecao-sonata-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "sonata"
+      ],
+      "title": "Sonata / 01",
+      "alt": "Coleção Sonata, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-sonata-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Rogerio-Maranhao_2023_evv_0-0322.jpg",
+      "sourcePage": "https://evviva.com.br/collections/sonata/"
+    },
+    {
+      "id": "colecao-aria-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "aria"
+      ],
+      "title": "Aria / 01",
+      "alt": "Coleção Aria, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-aria-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Ezequeiele-Panizzi-Studio-_-DSCF7438-min.jpg",
+      "sourcePage": "https://evviva.com.br/collections/aria/"
+    },
+    {
+      "id": "colecao-aria-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "aria"
+      ],
+      "title": "Aria / 02",
+      "alt": "Coleção Aria, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-aria-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/Rogerio-Maranhao_2023_evv_0-0346-min.jpg",
+      "sourcePage": "https://evviva.com.br/collections/aria/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-01",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 01",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 01.",
+      "file": "colecao-o-espirito-do-lugar-01.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07615.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-02",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 02",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 02.",
+      "file": "colecao-o-espirito-do-lugar-02.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07642.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-03",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 03",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 03.",
+      "file": "colecao-o-espirito-do-lugar-03.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07658.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-04",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 04",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 04.",
+      "file": "colecao-o-espirito-do-lugar-04.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07668.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-05",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 05",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 05.",
+      "file": "colecao-o-espirito-do-lugar-05.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07679.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-06",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 06",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 06.",
+      "file": "colecao-o-espirito-do-lugar-06.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07692.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-07",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 07",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 07.",
+      "file": "colecao-o-espirito-do-lugar-07.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07717.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-08",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 08",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 08.",
+      "file": "colecao-o-espirito-do-lugar-08.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07723.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    },
+    {
+      "id": "colecao-o-espirito-do-lugar-09",
+      "category": "colecoes",
+      "collectionIds": [
+        "o-espirito-do-lugar"
+      ],
+      "title": "O Espírito do Lugar / 09",
+      "alt": "Coleção O Espírito do Lugar, acervo oficial Evviva, imagem 09.",
+      "file": "colecao-o-espirito-do-lugar-09.jpg",
+      "source": "https://evviva.com.br/wp-content/uploads/2023/10/APF07736.jpg",
+      "sourcePage": "https://evviva.com.br/collections/o-espirito-do-lugar/"
+    }
+  ]
+}

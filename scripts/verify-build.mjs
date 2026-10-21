@@ -7,7 +7,7 @@ assert(existsSync(root), 'Execute npm run build antes da verificação.');
 const walk = directory => readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(path.join(directory, entry.name)) : [path.join(directory, entry.name)]);
 const files = walk(root);
 const pages = files.filter(file => file.endsWith('.html'));
-const expected = ['index.html', 'ambientes/cozinhas/index.html', 'ambientes/livings/index.html', 'ambientes/closets/index.html', 'surform-ssm/index.html', 'colecoes/index.html', 'materiais/index.html', 'nossa-loja/index.html', 'arquitetos/index.html', 'privacidade/index.html', '404.html'];
+const expected = ['index.html', 'portfolio/index.html', 'ambientes/cozinhas/index.html', 'ambientes/livings/index.html', 'ambientes/closets/index.html', 'surform-ssm/index.html', 'colecoes/index.html', 'materiais/index.html', 'nossa-loja/index.html', 'arquitetos/index.html', 'privacidade/index.html', '404.html'];
 expected.forEach(file => assert(existsSync(path.join(root, file)), `Rota ausente: ${file}`));
 let checkedLinks = 0;
 let checkedImages = 0;

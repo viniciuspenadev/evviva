@@ -7,3 +7,6 @@ dist/
 !.env.example
 *.log
 preview/qa/
+
+# Páginas públicas usadas somente na pesquisa de importação
+docs/research/*.html

@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import familyScene from '../assets/inspiration/family-living-popout.png';
+---
+<div class="family-scene">
+  <Image src={familyScene} widths={[480, 800, 1200, 1488]} sizes="(max-width: 800px) 90vw, 50vw" format="webp" quality={90} alt="Pais e filha compartilhando um momento de carinho no sofá, em uma sala com mobiliário de madeira. As cabeças dos pais ultrapassam o recorte arredondado da fotografia." loading="lazy" />
+</div>
+<style>
+  .family-scene { min-width: 0; }
+  .family-scene img { display: block; width: 100%; height: auto; }
+</style>

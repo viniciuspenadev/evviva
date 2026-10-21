@@ -25,12 +25,7 @@ export const environments = [
   },
 ] as const;
 
-export const collections = [
-  { name: 'Persona', label: 'Liberdade para criar', description: 'O sistema construtivo peça a peça amplia as possibilidades de personalização e adaptação à arquitetura.', url: 'https://evviva.com.br/collections/persona/' },
-  { name: 'Stima', label: 'A arquitetura em continuidade', description: 'Portas e revestimentos que exploram a integração entre superfícies, materiais e ambientes.', url: 'https://evviva.com.br/collections/stima/' },
-  { name: 'Versa', label: 'Possibilidades em movimento', description: 'Uma estrutura que permite reposicionar módulos e explorar novas composições para diferentes espaços.', url: 'https://evviva.com.br/collections/versa/' },
-  { name: 'Evvai', label: 'A presença do essencial', description: 'Buffet, bar, mesa de centro e móvel para TV assinados por Gustavo Bertolini, em madeira, pedra e metal.', url: 'https://evviva.com.br/collections/evvai/' },
-] as const;
+export { collections } from './collections';
 
 export const materialStories = [
   { id: 'madeira', title: 'Madeira', subtitle: 'Acolhimento que se sente.', text: 'Veios, nuances e textura trazem uma presença natural ao espaço. Uma linguagem que aproxima a arquitetura de quem vive nela.', className: 'wood' },

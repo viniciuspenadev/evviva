@@ -1,6 +1,6 @@
 # Evviva — A casa, à sua maneira.
 
-Site de apresentação em Astro, Tailwind e TypeScript, com fotografia editorial, paleta marfim/oliva e tipografia Playfair Display + DM Sans carregada localmente.
+Site de apresentação em Astro, Tailwind e TypeScript, com fotografia editorial, paleta marfim/preto chumbo e tipografia Playfair Display + DM Sans carregada localmente.
 
 ## Deploy no EasyPanel
 
@@ -32,9 +32,11 @@ npm run preview
 - Home com ambientes, personalização, coleções, materiais, processo e acesso ao atendimento.
 - Seção “Nossos serviços” antes dos ambientes, com o mesmo fundo marfim e exatamente três categorias: SURFORM SSM, Planejados e Móveis. Dados em `src/data/services.ts`, sem filtros ou carrossel.
 - Galeria imersiva em largura total com quatro cenários, transições, navegação flutuante e controles por teclado. Dois pontos por imagem revelam balões com linhas animadas; apenas um fica aberto por vez. Configuração dos pontos e textos em `src/data/scenes.ts`.
+- Portfólio `/portfolio/` com as 165 imagens do acervo oficial Evviva: 77 fotos de ambientes/acessórios e 88 amostras de acabamentos. Filtros por sete categorias, mais imagens por etapa e visualização ampliada com navegação por teclado. Seleção na home; origem em `docs/ACERVO_EVVIVA.md`.
 - Páginas próprias para cozinhas, livings e closets.
 - Página `/surform-ssm/` com cabeçalho, menu e rodapé próprios da SURFORM, explicação de SSM, aplicações ilustrativas, três publicações oficiais incorporadas, roteiro de escolha e cuidados. Fontes e limites em `docs/SURFORM_CONTEUDO_E_FONTES.md`.
 - Coleções e sistemas, com descrições baseadas no mapeamento e links para as páginas oficiais.
+- Seletor de coleções na home em arco com perspectiva, quatro fotografias oficiais, transições sincronizadas e controles por clique, arraste e teclado. Implementação Astro/CSS/TypeScript e fontes das imagens em `docs/COLECOES_INTERATIVAS.md`.
 - Explorador de materiais com abas acessíveis por teclado.
 - Experiência na loja, arquitetos, privacidade da prévia e página 404.
 - Menu móvel em diálogo nativo, foco, Escape e rolagem preservados.
@@ -51,7 +53,7 @@ O site de apresentação mantém `noindex, nofollow`, `robots.txt` e cabeçalho 
 
 ## Imagens e conteúdo
 
-`src/assets/inspiration/` contém seis imagens ilustrativas geradas por IA. Não são fotografias de produtos Evviva, obras entregues ou lojas. A origem é informada na página de privacidade, sem etiquetas repetidas nas imagens de ambientação. O estudo inicial aprovado está em `docs/conceito-aprovado.png`; origem, método e prompts das imagens estão em `docs/IMAGENS.md`, `docs/IMAGENS_SURFORM.md` e `docs/IMAGEM_MOVEIS_PROJETOS.md`.
+`src/assets/inspiration/` contém sete imagens ilustrativas geradas por IA. Não são fotografias de produtos Evviva, obras entregues ou lojas. A origem é informada na página de privacidade, sem etiquetas repetidas nas imagens de ambientação. O estudo inicial aprovado está em `docs/conceito-aprovado.png`; origem, método e prompts das imagens estão em `docs/IMAGENS.md`, `docs/IMAGENS_SURFORM.md` e `docs/IMAGEM_MOVEIS_PROJETOS.md` e `docs/IMAGEM_FAMILIA.md`.
 
 Não há dados, integrações de marketing, formulários ou credenciais da Tecnoglass neste projeto. A referência forneceu a linguagem técnica; a composição foi construída para o conceito da Evviva.
 

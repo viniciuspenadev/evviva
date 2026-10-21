@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import Arrow from './Arrow.astro';
+import { collections } from '../data/collections';
+import '../styles/collections.css';
+
+---
+<section class="collection-experience" id="colecoes" aria-labelledby="collections-title" data-collection-wheel>
+  <div class="collection-composition">
+    <a class="collection-visual" href="/portfolio/#colecao-stima" aria-label="Conhecer a coleção Stima" data-wheel-link>
+      <div class="collection-photos">
+        {collections.map((item, index) => <div class:list={['collection-photo', { 'is-active': index === 0 }]} data-wheel-photo aria-hidden={index !== 0 ? 'true' : undefined}>
+          <Image src={item.image} widths={[640, 960, 1440].filter(width => width <= item.image.width)} sizes="(max-width: 700px) 100vw, 62vw" format="webp" quality={90} alt={`Coleção ${item.name}, acervo oficial Evviva.`} loading="lazy" />
+        </div>)}
+        <span class="collection-image-arrow" aria-hidden="true"><Arrow /></span>
+      </div>
+    </a>
+    <div class="collection-selector">
+      <div class="collection-card">
+        <h2 id="collections-title">Possibilidades<br /><em>que se encontram.</em></h2>
+        <button class="collection-motion-control" type="button" aria-label="Pausar rotação automática" aria-pressed="false" data-wheel-pause>Pausar animação</button>
+        <p class="collection-keyboard-help" id="collection-keyboard-help">Use as setas para escolher uma coleção e Enter para conhecer os detalhes. Espaço pausa ou retoma a animação.</p>
+        <div class="collection-orbit" id="collection-orbit" role="listbox" aria-label="Selecionar coleção" aria-describedby="collection-keyboard-help" data-wheel-orbit>
+          {collections.map((item, index) => <a id={`wheel-${item.id}`} class:list={['collection-option', { 'collection-option-long': item.name.length > 14 }]} role="option" aria-selected={index === 0 ? 'true' : 'false'} href={`/portfolio/#colecao-${item.id}`} data-wheel-option data-name={item.name}>{item.name}</a>)}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import '../scripts/collections';
+</script>
