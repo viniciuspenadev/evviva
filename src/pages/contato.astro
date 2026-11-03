@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import { contactHref, contactLabel, site } from '../data/site';
+---
+<Layout title="Fale sobre seu projeto — SURFORM" invitation={false}>
+  <section class="container ssm-page-heading"><p class="eyebrow">Seu próximo projeto</p><h1>Uma ideia.<br /><em>Vamos dar forma?</em></h1><p>Conte à SURFORM sobre o seu espaço. Referências, uma planta ou medidas ajudam a começar a conversa.</p></section>
+  <section class="section container ssm-editorial-grid"><div><p class="eyebrow">Atendimento</p><h2>O primeiro encontro<br /><em>pode ser por aqui.</em></h2></div><div><p>Converse pelo canal oficial da SURFORM e compartilhe o que você está imaginando para o ambiente.</p><a class="button button-dark" href={contactHref} target="_blank" rel="noopener noreferrer">{contactLabel}<Arrow /></a><p style="font-size:12px;margin-top:28px"><a href={site.instagram} target="_blank" rel="noopener noreferrer">@surform_ssm ↗</a></p></div></section>
+</Layout>

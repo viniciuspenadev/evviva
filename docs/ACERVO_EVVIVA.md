@@ -30,3 +30,7 @@ As seis ambientações anteriormente produzidas permanecem em `src/assets/inspir
 - Marfim, areia, bronze, cores naturais das fotografias e cores reais das amostras de materiais preservados.
 
 Os arquivos oficiais do logotipo não foram recoloridos ou redesenhados.
+
+## Uso no cartão de planejados — 03/11/2026
+
+O cartão de planejados da home SURFORM usa as fotos oficiais `cozinhas-05.jpg`, `dormitorios-02.jpg` e `living-11.jpg`, alternadas por transição suave. O logo branco original da Evviva identifica a marca no cartão, com direcionamento externo preservado. A página de privacidade diferencia essas fotografias das ambientações geradas para a SURFORM e da imagem do cartão de móveis. O manifesto original continua registrando as fontes.

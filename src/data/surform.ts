@@ -1,12 +1,8 @@
+import { site, navigation } from './site';
 export const surform = {
   name: 'SURFORM',
-  instagram: 'https://www.instagram.com/surform_ssm/',
-  navigation: [
-    { label: 'Sobre a SSM', href: '#sobre' },
-    { label: 'Aplicações', href: '#aplicacoes' },
-    { label: 'Na prática', href: '#publicacoes' },
-    { label: 'Dúvidas', href: '#duvidas' },
-  ],
+  instagram: site.instagram,
+  navigation,
 } as const;
 
 // Publicações da própria empresa, conferidas publicamente em 20/10/2026.

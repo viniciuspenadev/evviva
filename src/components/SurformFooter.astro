@@ -1,5 +1,8 @@
 ---
-import { surform } from '../data/surform';
+import ContactBand from './ContactBand.astro';
+import { site, navigation } from '../data/site';
+interface Props { invitation?: boolean; }
+const { invitation = true } = Astro.props;
 ---
-<footer class="site-footer surform-footer"><div class="container footer-top"><a class="wordmark" href="/surform-ssm/" aria-label="SURFORM — início">SURFORM</a><p>Novas formas de sentir<br />e viver o seu espaço.</p><nav aria-label="Navegação do rodapé SURFORM">{surform.navigation.map(item => <a href={item.href}>{item.label}</a>)}<a href={surform.instagram} target="_blank" rel="noopener noreferrer">@surform_ssm ↗</a><a href="/#ambientes">Voltar à Evviva ↗</a></nav></div><div class="container footer-bottom"><span>SURFORM · Superfícies em SSM.</span><a href="/privacidade/">Privacidade</a></div></footer>
-<style>.surform-footer .wordmark { letter-spacing: .22em; font-size: 24px; } .footer-bottom > span { max-width: 560px; } @media(max-width:600px) { .footer-bottom > span { max-width: 280px; } }</style>
+{invitation && <ContactBand />}
+<footer class="ssm-footer"><div class="container"><div class="ssm-footer-top"><a class="surform-brand" href="/" aria-label="SURFORM — início"><span>SURFORM</span><small>Superfícies sólidas</small></a><p>Matéria. Desenho.<br />O seu jeito de viver.</p><nav aria-label="Navegação do rodapé">{navigation.map(item => <a href={item.href}>{item.label}</a>)}<a href="/arquitetos/">Para arquitetos</a><a href={site.instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav></div><div class="ssm-footer-bottom"><span>SURFORM © 2026</span><div><a href="/privacidade/">Privacidade</a><a href="/privacidade/#imagens">Sobre as imagens</a><a href={site.evvivaUrl} target="_blank" rel="noopener noreferrer">Conheça a Evviva ↗</a></div></div></div></footer>

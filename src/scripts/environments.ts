@@ -22,6 +22,17 @@ document.querySelectorAll<HTMLElement>('[data-environment-gallery]').forEach(gal
     const end = hotspot.querySelector<SVGCircleElement>('[data-hotspot-end]');
     if (!panel || !trigger || !bubble || !path || !end || panel.hidden) return;
     const bounds = panel.getBoundingClientRect();
+    const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
+    // Keep the open detail inside the visible part of its photo, below the header.
+    bubble.style.removeProperty('top');
+    bubble.style.removeProperty('bottom');
+    const headerBottom = document.querySelector('.site-header')?.getBoundingClientRect().bottom ?? 0;
+    const lastTop = Math.max(20, bounds.height - bubble.offsetHeight - 20);
+    const firstTop = Math.min(lastTop, Math.max(20, headerBottom + 16 - bounds.top));
+    const visibleLastTop = Math.max(firstTop, Math.min(lastTop, innerHeight - bounds.top - bubble.offsetHeight - 20));
+    const bubbleTop = clamp(bubble.offsetTop, firstTop, visibleLastTop);
+    bubble.style.top = `${bubbleTop}px`;
+    bubble.style.bottom = 'auto';
     const point = trigger.getBoundingClientRect();
     const x = point.left + point.width / 2 - bounds.left;
     const y = point.top + point.height / 2 - bounds.top;
@@ -29,7 +40,6 @@ document.querySelectorAll<HTMLElement>('[data-environment-gallery]').forEach(gal
     const top = bubble.offsetTop;
     const right = left + bubble.offsetWidth;
     const bottom = top + bubble.offsetHeight;
-    const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
     let endX: number, endY: number, elbowX: number, elbowY: number;
     if (x < left || x > right) {
       endX = x < left ? left : right;
@@ -64,6 +74,7 @@ document.querySelectorAll<HTMLElement>('[data-environment-gallery]').forEach(gal
   });
   const resizeObserver = new ResizeObserver(() => { if (activeHotspot) drawConnector(activeHotspot); });
   panels.forEach(panel => resizeObserver.observe(panel));
+  window.addEventListener('scroll', () => { if (activeHotspot) drawConnector(activeHotspot); }, { passive: true });
   document.addEventListener('pointerdown', event => {
     if (activeHotspot && !(event.target as Element).closest('[data-hotspot]')) closeHotspot();
   });

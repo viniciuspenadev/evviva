@@ -1,17 +1,18 @@
 ---
 import { Image } from 'astro:assets';
 import Arrow from './Arrow.astro';
-import { images } from '../data/images';
 import { services } from '../data/services';
 ---
 <section class="service-categories" id="projetos" aria-labelledby="services-title">
   <div class="container">
-    <div class="services-heading"><div><p class="eyebrow">Nossos serviços</p><h2 id="services-title">SSM, planejados<br /><em>e móveis.</em></h2></div><p>Três especialidades para<br />{' '}compor o seu espaço.</p></div>
-    <ul class="services-grid" aria-label="Categorias de serviços">{services.map((service, index) => <li><a class="service-card" href={service.href} aria-label={service.action}>
-      <Image src={images[service.image]} widths={[320, 480, 720]} sizes="(max-width: 1000px) 90vw, 30vw" format="webp" quality={85} alt={service.alt} style={`object-position:${service.position}`} loading="lazy" />
-      <div class="service-card-shade"></div><div class="service-card-top"><span>0{index + 1} / {service.label}</span></div>
-      <div class="service-card-copy"><h3>{service.title}</h3><p>{service.description}</p><span class="service-card-action">{service.action}<Arrow /></span></div>
-    </a></li>)}</ul>
+    <div class="services-heading"><div><p class="eyebrow">Possibilidades para o seu espaço</p><h2 id="services-title">SSM, planejados<br /><em>e móveis.</em></h2></div><p>Da superfície ao mobiliário,<br />o seu espaço por inteiro.</p></div>
+    <ul class="services-grid" aria-label="Categorias de serviços">{services.map((service, index) => <li data-service-gallery={service.slides.length > 1 ? service.id : undefined} data-gallery-interval={6000 + index * 1500}><a class="service-card" href={service.href} target={service.external ? '_blank' : undefined} rel={service.external ? 'noopener noreferrer' : undefined} aria-label={`${service.action}${service.external ? ' (abre em nova aba)' : ''}`}>
+      <div class="service-card-images">{service.slides.map((slide,slideIndex) => <div class:list={['service-card-slide',{'is-active':slideIndex === 0}]} id={`service-photo-${service.id}-${slideIndex}`} data-service-slide aria-hidden={slideIndex === 0 ? undefined : 'true'}>
+        <Image src={slide.image} widths={[480,720,1000,1200].filter(width => width <= slide.image.width)} sizes="(max-width:600px) 700px, (max-width:1000px) 90vw, 650px" format="webp" quality={90} alt={slide.alt} style={`object-position:${slide.position}`} loading="lazy" />
+      </div>)}</div>
+      <div class="service-card-shade"></div><div class:list={['service-card-top',{'has-gallery':service.slides.length > 1}]}><span>{service.label}</span></div>
+      <div class="service-card-copy"><h3 class="service-card-brand">{service.brand === 'surform' ? <><span class="sr-only">SSM — </span><span class="service-surform-mark">SURFORM<small>Superfícies sólidas</small></span></> : service.brand === 'evviva' ? <><span class="sr-only">Planejados </span><img class="service-evviva-mark" src="/brand/logo-evviva-branco.svg" width="192" height="32" alt="Evviva" decoding="async" /></> : <span class="service-surform-mark service-furniture-mark">{service.title}</span>}</h3><p>{service.description}</p><span class="service-card-action">{service.action}<Arrow /></span></div>
+    </a>{service.slides.length > 1 && <div class="service-gallery-dots" role="group" aria-label={`Fotos de ${service.title === 'SSM' ? 'superfícies' : 'planejados'}`} data-gallery-dots hidden>{service.slides.map((_,slideIndex) => <button type="button" aria-label={`Ver foto ${slideIndex + 1} de ${service.slides.length} de ${service.title === 'SSM' ? 'superfícies' : 'planejados'}`} aria-pressed={slideIndex === 0 ? 'true' : 'false'} aria-controls={`service-photo-${service.id}-${slideIndex}`} data-gallery-dot={slideIndex}><span aria-hidden="true"></span></button>)}</div>}</li>)}</ul>
   </div>
 </section>
 <style>
@@ -20,20 +21,36 @@ import { services } from '../data/services';
   .services-heading h2 { font-size: clamp(42px, 4.4vw, 68px); line-height: 1.1; }
   .services-heading > p { font-size: 14px; line-height: 1.7; color: var(--muted); padding-bottom: 6px; }
   .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0; list-style: none; margin: 0; }
-  .services-grid > li { min-width: 0; }
+  .services-grid > li { position: relative; min-width: 0; }
   .service-card { position: relative; isolation: isolate; display: block; overflow: hidden; height: clamp(450px, 36vw, 560px); border-radius: 18px; background: var(--charcoal); color: var(--paper); }
-  .service-card > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -3; transition: transform .9s cubic-bezier(.2,.65,.3,1); }
-  .service-card:hover > img, .service-card:focus-visible > img { transform: scale(1.045); }
+  .service-card-images { position: absolute; inset: 0; z-index: -3; transition: transform .9s cubic-bezier(.2,.65,.3,1); }
+  .service-card-slide { position: absolute; inset: 0; opacity: 0; transform: scale(1.035); transition: opacity 1.3s ease, transform 6s ease-out; }
+  .service-card-slide.is-active { opacity: 1; transform: scale(1); }
+  .service-card-slide img { width: 100%; height: 100%; object-fit: cover; }
+  .service-card:hover .service-card-images, .service-card:focus-visible .service-card-images { transform: scale(1.035); }
   .service-card-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(0deg, rgb(15 15 17 / .92), rgb(15 15 17 / .25) 42%, transparent 75%), linear-gradient(180deg, rgb(15 15 17 / .28), transparent 25%); }
-  .service-card-top { position: absolute; top: 22px; left: 22px; right: 22px; display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 8px; }
+  .service-card-top { position: absolute; top: 24px; left: 22px; right: 22px; display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 8px; }
+  .service-card-top.has-gallery { right: 124px; }
   .service-card-top > span:first-child { text-transform: uppercase; letter-spacing: .09em; text-shadow: 0 1px 6px #000; }
   .service-card-copy { position: absolute; bottom: 27px; left: 27px; right: 27px; }
   .service-card-copy h3 { font-size: clamp(31px, 2.6vw, 42px); line-height: 1.15; }
+  .service-card-copy .service-card-brand { display: flex; align-items: end; min-height: 48px; }
+  .service-surform-mark { display: inline-flex; flex-direction: column; gap: 8px; font-family: var(--font-sans); font-size: clamp(23px,2.15vw,32px); line-height: 1; letter-spacing: .18em; font-weight: 400; }
+  .service-surform-mark small { font-family: var(--font-sans); font-size: 6px; line-height: 1; letter-spacing: .28em; text-transform: uppercase; color: #e1ddd3; }
+  .service-furniture-mark { text-transform: uppercase; }
+  .service-evviva-mark { width: 176px; height: auto; margin-bottom: 3px; }
   .service-card-copy > p { margin-top: 13px; font-size: 12px; line-height: 1.7; color: #e1ddd3; max-width: 360px; }
   .service-card-action { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-top: 24px; padding-top: 16px; border-top: 1px solid rgb(255 255 255 / .32); font-size: 10px; }
   .service-card-action :global(.arrow-icon) { width: 21px; transform: rotate(-35deg); }
   .service-card:hover .service-card-action :global(.arrow-icon) { transform: rotate(-35deg) translateX(3px); }
+  .service-gallery-dots { position: absolute; top: 15px; right: 13px; z-index: 2; display: flex; align-items: center; }
+  .service-gallery-dots button { display: grid; place-items: center; width: 24px; height: 30px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: white; }
+  .service-gallery-dots button span { width: 5px; height: 5px; border-radius: 50%; background: rgb(255 255 255 / .5); box-shadow: 0 1px 5px rgb(0 0 0 / .45); transition: background .25s, transform .25s, box-shadow .25s; }
+  .service-gallery-dots button[aria-pressed='true'] span { background: white; box-shadow: 0 0 0 3px rgb(255 255 255 / .2), 0 1px 5px rgb(0 0 0 / .4); transform: scale(1.2); }
+  .service-gallery-dots button:hover span { background: white; }
+  .service-gallery-dots button:focus-visible { outline-color: white; outline-offset: -2px; }
   @media(max-width: 1000px) { .services-grid { grid-template-columns: 1fr; gap: 24px; } .service-card { height: 380px; } .service-card-copy h3 { font-size: 38px; } .service-card-copy > p { max-width: 420px; } }
-  @media(max-width: 600px) { .service-categories { padding-top: 52px; } .services-heading { flex-direction: column; align-items: start; gap: 22px; margin-bottom: 28px; } .services-heading h2 { font-size: clamp(36px, 10vw, 46px); } .services-heading > p { font-size: 12px; padding: 0; } .services-heading > p br { display: none; } .service-card { height: 420px; border-radius: 15px; } .service-card-top { top: 18px; left: 18px; right: 18px; font-size: 7px; } .service-card-copy { left: 23px; right: 23px; bottom: 24px; } .service-card-copy h3 { font-size: 34px; } .service-card-copy > p { font-size: 11px; } }
-  @media(prefers-reduced-motion: reduce) { .service-card > img { transition: none; } }
+  @media(max-width: 600px) { .service-categories { padding-top: 52px; } .services-heading { flex-direction: column; align-items: start; gap: 22px; margin-bottom: 28px; } .services-heading h2 { font-size: clamp(36px, 10vw, 46px); } .services-heading > p { font-size: 12px; padding: 0; } .services-heading > p br { display: none; } .service-card { height: 420px; border-radius: 15px; } .service-card-top { top: 22px; left: 18px; right: 18px; font-size: 7px; } .service-card-top.has-gallery { right: 118px; } .service-card-copy { left: 23px; right: 23px; bottom: 24px; } .service-card-copy h3 { font-size: 34px; } .service-surform-mark { font-size: 27px; } .service-card-copy > p { font-size: 11px; } .service-gallery-dots { top: 12px; right: 9px; } }
+  @media(prefers-reduced-motion: reduce) { .service-card-images, .service-card-slide, .service-gallery-dots button span { transition: none; } }
 </style>
+<script>import '../scripts/service-galleries';</script>

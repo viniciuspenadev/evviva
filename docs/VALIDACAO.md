@@ -163,3 +163,82 @@ Capturas adicionais em `docs/preview/`: `ambientes-surform-desktop.png`, `ambien
 - Conferência visual em desktop e 390 px; navegador confirmou fundo transparente, imagem de fundo/sombra/desfoque ausentes e borda de 0 px. Celular sem transbordamento horizontal.
 - Build e verificador aprovados: 12 páginas, 730 referências locais, 234 instâncias de imagem e 659 variantes WebP.
 - Capturas: `docs/preview/colecoes-sem-caixa-desktop.png` e `docs/preview/colecoes-sem-caixa-mobile.png`.
+
+## Reposicionamento — SURFORM exclusiva (01/11/2026)
+
+- Marca principal, cabeçalho, rodapé, favicon, títulos e metadados alterados para SURFORM. A Evviva aparece em um único encaminhamento externo no rodapé de cada página de conteúdo.
+- Home refeita com superfície em destaque, detalhe de cuba/borda com linha e balão, três aplicações em rotação 3D, galeria, processo e acesso ao atendimento. Título e rotação permanecem sobre o degradê, sem caixa de fundo ou guia de navegação.
+- Quatro ambientações novas geradas com Imagegen e preservadas em `src/assets/surform/`: cozinha, lavabo, banho e detalhe. Revisão de proporções, apoios, cubas, torneiras, válvulas, iluminação e acabamento. Fonte e briefs em `docs/IMAGENS_SURFORM_2026.md`; origem comunicada em `/privacidade/#imagens`. Nenhum cliente, obra entregue, depoimento, número de projetos ou certificação inventado.
+- Páginas próprias de superfície sólida, cozinhas, lavabos, banhos, galeria, sobre, arquitetos, contato e privacidade. As publicações reais do perfil SURFORM ficam separadas das ambientações e carregam por solicitação.
+- Versão anterior copiada para `docs/archive/evviva-2026-11-01/`, ignorada pelo Git e pela checagem de tipos. O acervo anterior não é importado nas páginas atuais. Sete endereços antigos usam redirecionamentos estáticos para o novo conteúdo.
+- Atendimento pelo Instagram oficial enquanto o WhatsApp não é confirmado. Marcas e produtos oferecidos ainda precisam ser definidos. Nenhum formulário sem envio foi mantido na experiência ativa. Nenhuma mensagem enviada, nenhum DNS alterado e nenhum deploy externo realizado.
+- Domínio anterior retirado dos canonicals. Novo endereço configurável por `PUBLIC_SITE_URL`, inclusive como argumento de build Docker. Nginx e porta interna 3000 preservados; imagem Docker não executada no ambiente.
+- Build: 51 arquivos checados, zero erros/avisos/sugestões. 18 páginas, incluindo sete redirecionamentos. Verificador: 310 referências locais, 19 instâncias de imagem, 56 variantes WebP, status OK.
+- Navegador: 320, 390, 820 e 1440 px sem transbordamento horizontal. Páginas internas conferidas em 390 px. Menu abre, fecha por Escape, restaura foco e libera rolagem. Galeria filtra as quatro categorias, amplia imagens, muda com setas e fecha com Escape. Aplicações sincronizam nome, foto e destino.
+- Hotspots: uma abertura por vez, troca fecha o anterior, linha desenhada, Escape funcional. Balão reposicionado conforme a área visível da foto e o cabeçalho; em 1440 px ficou integralmente dentro da tela e abaixo do cabeçalho. Console final sem erros ou avisos locais.
+- Capturas: `surform-nova-home-desktop.png`, `surform-nova-home-mobile.png`, `surform-aplicacoes-desktop.png`, `surform-galeria-desktop.png` e `surform-detalhe-desktop.png`, em `docs/preview/`.
+
+## Revisão — serviços e família restaurados (01/11/2026)
+
+- Retomados os três cartões de “SSM, planejados e móveis” logo após o hero, com o layout, arredondamento, degradês e movimento de imagem do componente original. A categoria SSM usa a nova cozinha SURFORM; planejados e móveis identificam a Evviva e abrem seus destinos externos em nova aba.
+- A grade “O desenho muda. O cuidado permanece.” foi substituída pelo bloco “O seu jeito de viver é o ponto de partida.”, com a família ultrapassando o recorte arredondado. Mesmo ativo transparente da referência do usuário; textos e acesso à experiência adaptados para SURFORM.
+- Origem das ambientações atualizada na página de privacidade, incluindo família e cartões reaproveitados. As imagens desses cartões não são atribuídas ao catálogo oficial da Evviva.
+- Build: 51 arquivos checados, zero erros/avisos/sugestões, 18 páginas. Verificador: 309 referências locais, 20 instâncias de imagem e 61 variantes WebP, status OK.
+- Navegador: 1363, 820, 390 e 320 px sem transbordamento horizontal. Três cartões, destinos e carregamento das imagens confirmados; família em uma coluna no celular e transparência preservada. Console sem erros ou avisos na conferência final.
+- Capturas em `docs/preview/`: `surform-servicos-restaurados-desktop.png`, `surform-servicos-restaurados-mobile.png`, `surform-familia-restaurada-desktop.png` e `surform-familia-restaurada-mobile.png`. Prévia local mantida, sem publicação externa.
+
+## Revisão — mistura de estilos e superfícies em destaque (03/11/2026)
+
+- Quatro imagens novas geradas com a ferramenta integrada Imagegen a partir das referências enviadas pelo cliente: cozinha grafite, cozinha greige, lavabo com revestimento mineral e banho em tons de areia. Bancadas e cubas mantêm acabamento homogêneo e acetinado; as texturas minerais ficam nos elementos ao redor. Comando da torneira de parede acrescentado por edição localizada do lavabo.
+- Abertura e cartão SSM usam a cozinha grafite; planejados usam a cozinha greige. Móveis e família preservados. Aplicações, páginas internas e textos alternativos atualizados. O detalhe interativo de superfície não foi alterado.
+- Galeria ampliada de quatro para oito imagens, com três cozinhas, dois lavabos, dois banhos e um detalhe. Ambientes anteriores com madeira preservados. Filtro de cozinhas exibiu três resultados; a nova imagem greige abriu no ampliador como 02/03. Todas voltou a apresentar oito imagens. Contagem inicial usa o tamanho dos dados, sem número fixo.
+- Ajustadas as resoluções responsivas para os recortes verticais da abertura e dos cartões. Em 390 px, a abertura final selecionou o arquivo de 1672 px; seletor usa recortes definidos por aplicação. Conferência visual dos três ambientes no desktop e do lavabo no celular, com cuba, bancada e metais legíveis.
+- Build final: 51 arquivos checados, zero erros/avisos/sugestões, 18 páginas. Verificador: 317 referências locais, 24 instâncias de imagem e 76 variantes WebP, status OK. `git diff --check` sem ocorrências.
+- Navegador: home em 1280, 820, 390 e 320 px sem transbordamento horizontal; galeria em 1280 e 390 px sem transbordamento. Console final sem erros/avisos locais. Prévia local respondeu HTTP 200. Nenhuma publicação externa, mensagem ou alteração de DNS.
+- Originais e prompts em `docs/IMAGENS_SURFORM_ESTILOS_2026-11-03.md` e `docs/research/surform-estilos-prompts-2026-11-03.json`. Capturas `surform-estilos-hero-desktop.png`, `surform-estilos-hero-mobile.png`, `surform-estilos-servicos-desktop.png`, `surform-estilos-aplicacoes-desktop.png`, `surform-estilos-aplicacoes-mobile.png`, `surform-estilos-lavabo-desktop.png` e `surform-estilos-banho-desktop.png`, em `docs/preview/`.
+
+## Revisão — riqueza dos detalhes da cuba e escorredor (03/11/2026)
+
+- Substituída somente a foto da seção “O detalhe faz parte do todo” por uma ambientação nova de cuba integrada, rebaixo e escorredor removível com recortes. Gerada com Imagegen a partir da referência do usuário, em 1672 × 941 px; arquivo `src/assets/surform/detalhe-cuba-escorredor-2026-11.png`. Imagem anterior preservada nas demais páginas e na galeria.
+- Três pontos: cuba, escorredor e borda. Posicionamento próprio no celular. Balão à esquerda no desktop e no alto da foto no celular, preservando acesso aos três pontos enquanto um detalhe está aberto. Textos curtos, leitura de SSM acetinada e nova imagem responsiva em qualidade 94.
+- Conferidos no navegador: foto carregada, três pontos sobre os detalhes, linha com trajeto SVG, troca fecha o balão anterior e mantém somente um aberto, Escape fecha. Os três centros dos botões permaneceram acessíveis com o balão aberto em 1280, 390 e 320 px. Sem transbordamento horizontal; console final sem erros/avisos.
+- Build final: 51 arquivos checados, zero erros/avisos/sugestões e 18 páginas. Verificador: 317 referências locais, 24 instâncias de imagem e 78 variantes WebP, status OK. `git diff --check` sem ocorrências. Sem publicação externa.
+- Fonte, revisão e prompt em `docs/IMAGEM_SURFORM_DETALHE_ESCORREDOR_2026-11-03.md`. Capturas em `docs/preview/surform-detalhe-escorredor-desktop.png` e `docs/preview/surform-detalhe-escorredor-mobile.png`.
+
+## Revisão — foto full width e apresentação dos detalhes (03/11/2026)
+
+- Seção “O detalhe faz parte do todo” integrada ao fundo chumbo. Fotografia ocupa toda a largura útil da página, fora do contêiner e sem margens ou cantos arredondados. Título e introdução preservados acima; informações em faixa abaixo da foto.
+- Três pontos numerados conectados à faixa por linha animada. Um detalhe aberto por vez, com título, texto curto e ampliação da mesma imagem. Controles Cuba/Escorredor/Borda, setas, Home/End, botão de fechar e Escape; estados ARIA e região de atualização acessível. Sem novas dependências ou imagens geradas.
+- No celular, conteúdo empilhado e seleção trazendo a faixa para a área visível. Movimento reduzido respeitado. Foto conferida iniciando em x=0 e ocupando a largura útil em 1280, 1440, 820 e 390 px; largura de 320 px também conferida, sem transbordamento além de `innerWidth`.
+- Navegador: seleção de escorredor e borda atualiza título, contador, ampliação e trajeto; somente um painel e uma linha ativos. End seleciona Borda; Escape fecha e mostra a apresentação geral. Console final sem erros/avisos.
+- Build: 52 arquivos checados, zero erros/avisos/sugestões, 18 páginas. Verificador: 317 referências locais, 24 instâncias de imagem, 78 variantes WebP, status OK. Log em `docs/research/build-surface-study.log`. Nenhuma publicação externa.
+- Capturas finais: `docs/preview/surform-detalhes-full-width-desktop.png` e `docs/preview/surform-detalhes-full-width-mobile.png`.
+
+## Revisão — detalhes somente ao clicar (03/11/2026)
+
+- Removida a faixa inferior inteira, incluindo ampliação, seletores e rodapé. Título, introdução e foto full width preservados. As três bolinhas iniciam fechadas; clicar abre um balão sobre a foto, conectado por linha animada, com um único detalhe visível.
+- Navegador: estado inicial sem painel aberto; troca Cuba/Escorredor/Borda mantém somente um painel e uma linha ativos. Fechamento por Escape, botão de fechar e novo clique no ponto conferidos. Foto iniciando em x=0; três pontos acessíveis com o balão aberto em 1280, 390 e 320 px. Sem transbordamento horizontal; console sem erros ou avisos.
+- Build: 52 arquivos checados, zero erros/avisos/sugestões e 18 páginas. Verificador: 317 referências locais, 24 instâncias de imagem, 78 variantes WebP, status OK. Nenhuma nova imagem ou dependência. Prévia local atualizada, sem publicação externa.
+- Capturas: `docs/preview/surform-detalhes-baloes-desktop.png` e `docs/preview/surform-detalhes-baloes-mobile.png`.
+
+## Revisão — balões ancorados nos pontos (03/11/2026)
+
+- Cada balão abre acima da bolinha selecionada, centralizado quando há espaço, com conexão curta na borda inferior e entrada suave a partir dessa conexão. Ajustes laterais priorizam a posição mais próxima do ponto e evitam cobrir os outros controles. Quando necessário no celular, o balão sobe para liberar as demais bolinhas. Foto full width e um único detalhe aberto preservados.
+- Balão de 300 px no desktop e 272 px no celular, limitado à largura disponível; foto móvel com altura mínima de 420 px. Posição vinculada à foto durante a rolagem. Rótulo de hover oculto no ponto ativo para não duplicar a informação.
+- Conferidos Cuba, Escorredor e Borda no desktop e em 390 px: informações acima dos pontos, um painel aberto e três controles acessíveis. Escorredor conferido em 320 px e Borda em 820 px; balões dentro da largura da foto, sem bloquear controles. Escape e botão de fechar funcionais. Console final sem erros ou avisos.
+- Build: 52 arquivos checados, zero erros/avisos/sugestões e 18 páginas. Verificador de referências e imagens: status OK. Sem novas imagens, dependências ou publicação externa. Capturas em `docs/preview/surform-balao-ancorado-desktop.png` e `docs/preview/surform-balao-ancorado-mobile.png`.
+
+## Revisão — marcas e fotos nos cartões de serviços (03/11/2026)
+
+- Cartão SSM com a marca tipográfica SURFORM já usada no cabeçalho e quatro fotos: cozinha grafite, detalhe da cuba/escorredor, lavabo mineral e banho em areia. Planejados com o arquivo branco oficial da Evviva e três fotografias do acervo da marca: cozinha, closet e living. Móveis preservado. Descrições e introdução da seção atualizadas.
+- Troca por transição de opacidade e movimento discreto, em intervalos de 6 e 7,5 segundos. Pausa individual, suspensão ao passar o ponteiro ou focar o link, fora da área visível e com a aba oculta. Preferência de movimento reduzido desativa a rotação. Sem indicadores, setas, bibliotecas novas ou novos arquivos de imagem.
+- Navegador: fotografias e logo carregados; somente um slide exposto por cartão. Alternância observada nos dois cartões, pausa mantém o slide e retomada volta à rotação. Desktop e celular de 390 px conferidos visualmente, com marcas, descrições, destinos e controles legíveis. Privacidade atualizada para a nova origem das imagens de planejados.
+- Build: 53 arquivos checados, zero erros/avisos/sugestões e 18 páginas. Verificador: 323 referências locais, 30 instâncias de imagem e 100 variantes WebP, status OK. Log em `docs/research/build-service-galleries.log`. Nenhuma publicação externa.
+- Capturas: `surform-servicos-logos-desktop.png`, `surform-servicos-logos-mobile.png` e `surform-planejados-logo-mobile.png`, em `docs/preview/`.
+
+## Revisão — bolinhas, textos sem numeração e fonte de móveis (03/11/2026)
+
+- Removidos os controles visuais de play/pausa dos cartões. Quatro bolinhas em SSM e três em planejados indicam a fotografia atual e permitem escolher outra, mantendo a rotação automática. Pausa durante interação com ponteiro ou teclado, fora da área visível e com aba oculta; movimento reduzido continua respeitado. Setas, Home e End permitem navegar entre as bolinhas.
+- Retirados os prefixos numéricos dos cartões de serviços, das etapas da home, das etapas para arquitetos e dos links do menu móvel. Os textos correspondentes foram preservados. “Móveis” usa a mesma classe tipográfica da marca SURFORM: DM Sans, peso 400, tamanho e espaçamento de letras iguais, em maiúsculas.
+- Navegador: seleção manual dos dois cartões sincronizou foto e bolinha ativa. Seta para a esquerda selecionou a foto anterior em planejados. Fonte, tamanho e espaçamento de SURFORM e Móveis conferidos iguais no estilo calculado. Em 390 px, bolinhas e rótulos legíveis, menu sem numeração, abertura e fechamento funcionais. Sem controle de play nos cartões.
+- Build: 53 arquivos checados, zero erros/avisos/sugestões e 18 páginas; verificador com status OK. Capturas em `docs/preview/surform-servicos-bolinhas-desktop.png` e `docs/preview/surform-servicos-bolinhas-mobile.png`. Sem novas dependências ou publicação externa.

@@ -1,6 +1,8 @@
 FROM node:24-alpine AS build
 WORKDIR /app
 ENV ASTRO_TELEMETRY_DISABLED=1
+ARG PUBLIC_SITE_URL=""
+ENV PUBLIC_SITE_URL=$PUBLIC_SITE_URL
 
 COPY package.json package-lock.json ./
 RUN npm ci --include=dev

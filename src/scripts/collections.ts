@@ -1,3 +1,4 @@
+export {};
 const wheel = document.querySelector<HTMLElement>('[data-collection-wheel]');
 
 if (wheel) {
@@ -51,7 +52,7 @@ if (wheel) {
       else element.setAttribute('aria-hidden', 'true');
     });
     link.href = options[selected].href;
-    link.setAttribute('aria-label', `Conhecer a coleção ${options[selected].dataset.name}`);
+    link.setAttribute('aria-label', `${wheel!.dataset.linkLabel ?? 'Conhecer a coleção'} ${options[selected].dataset.name}`);
     orbit.setAttribute('aria-activedescendant', options[selected].id);
   }
 

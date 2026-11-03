@@ -1,60 +1,49 @@
-# Evviva — A casa, à sua maneira.
+# SURFORM — A matéria encontra a sua forma.
 
-Site de apresentação em Astro, Tailwind e TypeScript, com fotografia editorial, paleta marfim/preto chumbo e tipografia Playfair Display + DM Sans carregada localmente.
+Site de apresentação em Astro, Tailwind CSS e TypeScript, dedicado às superfícies sólidas. Identidade em chumbo e marfim, fontes locais Playfair Display e DM Sans, fotografias de ambientação produzidas para o projeto e um encaminhamento externo discreto para a Evviva no rodapé.
 
-## Deploy no EasyPanel
-
-Preparado para **https://evviva.bluedigitalhub.com.br**, com `Dockerfile`, `nginx.conf` e `.dockerignore`. No EasyPanel: serviço **App**, fonte **GitHub**, build **Dockerfile**, contexto `/`, porta interna **3000** e HTTPS no domínio. O build valida o site antes de gerar a imagem final. Instruções completas em [docs/DEPLOY_EASYPANEL.md](docs/DEPLOY_EASYPANEL.md).
-
-A apresentação mantém bloqueio de indexação por meta, robots.txt e cabeçalho HTTP. O formulário continua sem envio. O repositório remoto e a configuração do serviço/DNS ainda precisam ser definidos no GitHub e no painel.
-
-## Rodar
+## Desenvolvimento
 
 Node >= 22.12.0.
 
 ```sh
 npm ci
 npm run dev
-```
-
-O servidor usa a porta 4321. As dependências iniciais foram copiadas da instalação local da Tecnoglass, com as mesmas versões fixadas no lockfile, sem alterar o projeto de referência.
-
-```sh
 npm run build
 npm run verify
 npm run preview
 ```
 
-`dist/` contém o resultado estático. O build executa a checagem de tipos do Astro e otimiza as imagens em WebP responsivo.
+O preview usa `http://127.0.0.1:4321/`. O resultado estático fica em `dist/`. O build verifica os tipos e gera imagens responsivas em WebP.
 
-## Experiência implementada
+## Experiência
 
-- Home com ambientes, personalização, coleções, materiais, processo e acesso ao atendimento.
-- Seção “Nossos serviços” antes dos ambientes, com o mesmo fundo marfim e exatamente três categorias: SURFORM SSM, Planejados e Móveis. Dados em `src/data/services.ts`, sem filtros ou carrossel.
-- Galeria imersiva em largura total com quatro cenários, transições, navegação flutuante e controles por teclado. Dois pontos por imagem revelam balões com linhas animadas; apenas um fica aberto por vez. Configuração dos pontos e textos em `src/data/scenes.ts`.
-- Portfólio `/portfolio/` com as 165 imagens do acervo oficial Evviva: 77 fotos de ambientes/acessórios e 88 amostras de acabamentos. Filtros por sete categorias, mais imagens por etapa e visualização ampliada com navegação por teclado. Seleção na home; origem em `docs/ACERVO_EVVIVA.md`.
-- Páginas próprias para cozinhas, livings e closets.
-- Página `/surform-ssm/` com cabeçalho, menu e rodapé próprios da SURFORM, explicação de SSM, aplicações ilustrativas, três publicações oficiais incorporadas, roteiro de escolha e cuidados. Fontes e limites em `docs/SURFORM_CONTEUDO_E_FONTES.md`.
-- Coleções e sistemas, com descrições baseadas no mapeamento e links para as páginas oficiais.
-- Seletor de coleções na home em arco com perspectiva, quatro fotografias oficiais, transições sincronizadas e controles por clique, arraste e teclado. Implementação Astro/CSS/TypeScript e fontes das imagens em `docs/COLECOES_INTERATIVAS.md`.
-- Explorador de materiais com abas acessíveis por teclado.
-- Experiência na loja, arquitetos, privacidade da prévia e página 404.
-- Menu móvel em diálogo nativo, foco, Escape e rolagem preservados.
-- Preparação de mensagem com validação e revisão, sem submissão, armazenamento ou confirmação de agendamento.
-- Respeito a movimento reduzido e imagens com dimensões, alternativas e carregamento sob demanda.
+- Home: superfície em destaque, três categorias (SSM, planejados e móveis), marcas SURFORM e Evviva com fotos alternadas nos dois primeiros cartões, foto full width com detalhes de cuba/escorredor/borda em balões ao clicar e linha animada, aplicações em rotação 3D, seção da família, processo de escolha e atendimento. Planejados e móveis encaminham para a Evviva.
+- `/superficies/`: categoria SSM, possibilidades e cuidados de uso.
+- `/aplicacoes/cozinhas/`, `/aplicacoes/lavabos/`, `/aplicacoes/banhos/`: referências por ambiente.
+- `/portfolio/`: galeria de aplicações com filtros e visualizador por teclado. O nome da rota foi mantido para compatibilidade; as imagens não são apresentadas como obras executadas.
+- `/sobre/` e `/arquitetos/`: posicionamento da SURFORM e conversa sobre especificação.
+- `/contato/` e `/privacidade/`: canal de atendimento e origem das imagens.
+- Publicações históricas do perfil oficial @surform_ssm em `/sobre/` e na galeria. Incorporações carregadas somente ao abrir cada publicação.
+- Menu e visualizador com diálogo nativo, Escape e retorno do foco. Movimento reduzido respeitado.
+- Endereços antigos redirecionam para a nova experiência SURFORM.
 
-## Personalizar a unidade
+## Configuração comercial
 
-Os dados comerciais ficam em `src/data/site.ts`. Nome da unidade, cidade, endereço, WhatsApp e e-mail permanecem vazios até serem confirmados. O domínio temporário está configurado ali e em `astro.config.mjs`. O site usa o localizador oficial como destino externo de atendimento.
+`src/data/site.ts` centraliza identidade, WhatsApp, Instagram e link externo da Evviva. Enquanto o WhatsApp não é informado, o contato leva ao Instagram oficial. Não há envio de formulário, armazenamento de dados pessoais ou confirmação de agendamento.
 
-Ao configurar um número de WhatsApp, o resumo pode encaminhar a mensagem por `wa.me`; a pessoa ainda precisa continuar no serviço. Ajustar conjuntamente os textos de privacidade e demonstração antes de ativar esse fluxo. Atualmente a experiência está identificada como demonstração e não envia dados.
+O domínio SURFORM ainda precisa ser definido. Configure `PUBLIC_SITE_URL` no build quando o endereço estiver confirmado; até lá o site não publica canonical com o domínio anterior. A apresentação mantém `noindex, nofollow` e `robots.txt` bloqueando indexação.
 
-O site de apresentação mantém `noindex, nofollow`, `robots.txt` e cabeçalho HTTP bloqueando indexação. Antes do lançamento definitivo, preencher a unidade, revisar identidade e conteúdo com a franqueadora, inserir imagens autorizadas e provas da operação real, configurar a política de privacidade, domínio e metadados de compartilhamento, ativar o canal de atendimento e ajustar a indexação.
+## Imagens
 
-## Imagens e conteúdo
+Oito ambientações na galeria: cozinha grafite, cozinha greige, lavabo mineral, banho em tons de areia, três ambientes com madeira e detalhe de bancada/cuba. A seção de detalhes da home tem uma imagem própria de cuba integrada com escorredor removível. As imagens combinam estilos diferentes mantendo a superfície sólida em destaque. São ambientações produzidas por IA, sem clientes, locais ou obras fictícias atribuídas à empresa. A origem é explicada em `/privacidade/#imagens`.
 
-`src/assets/inspiration/` contém sete imagens ilustrativas geradas por IA. Não são fotografias de produtos Evviva, obras entregues ou lojas. A origem é informada na página de privacidade, sem etiquetas repetidas nas imagens de ambientação. O estudo inicial aprovado está em `docs/conceito-aprovado.png`; origem, método e prompts das imagens estão em `docs/IMAGENS.md`, `docs/IMAGENS_SURFORM.md` e `docs/IMAGEM_MOVEIS_PROJETOS.md` e `docs/IMAGEM_FAMILIA.md`.
+Originais, briefs e critérios de revisão estão em `docs/IMAGENS_SURFORM_2026.md`, `docs/IMAGENS_SURFORM_ESTILOS_2026-11-03.md` e `docs/IMAGEM_SURFORM_DETALHE_ESCORREDOR_2026-11-03.md`. Dados, alternativas e recortes em `src/data/surform-media.ts`; o detalhe exclusivo da home é definido em `src/components/SurfaceDetail.astro`. Os registros reais do Instagram permanecem separados, com autoria e data.
 
-Não há dados, integrações de marketing, formulários ou credenciais da Tecnoglass neste projeto. A referência forneceu a linguagem técnica; a composição foi construída para o conceito da Evviva.
+## Histórico preservado
 
-O mapeamento de origem permanece em `MAPEAMENTO_EVVIVA.md` e `INVENTARIO_URLS_EVVIVA.json`.
+A versão anterior foi copiada para `docs/archive/evviva-2026-11-01/` antes da reformulação. O arquivo é local, ignorado pelo Git e pela checagem de tipos. Os cartões de serviços e a seção da família foram reaproveitados na home SURFORM, com textos e destinos adaptados. O acervo Evviva não integra a galeria SURFORM.
+
+## Docker e EasyPanel
+
+A base de deploy foi preservada: Node 24 no build, Nginx na porta interna 3000 e `/healthz`. Veja `docs/DEPLOY_EASYPANEL.md`. Nenhum push, alteração de DNS ou deploy externo é executado pelo build.
