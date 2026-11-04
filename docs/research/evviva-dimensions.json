@@ -1,0 +1,827 @@
+[
+  {
+    "id": "cozinhas-01",
+    "width": 2560,
+    "height": 1707
+  },
+  {
+    "id": "cozinhas-02",
+    "width": 2560,
+    "height": 1707
+  },
+  {
+    "id": "cozinhas-03",
+    "width": 2560,
+    "height": 1707
+  },
+  {
+    "id": "cozinhas-04",
+    "width": 1560,
+    "height": 1025
+  },
+  {
+    "id": "cozinhas-05",
+    "width": 1356,
+    "height": 1080
+  },
+  {
+    "id": "cozinhas-06",
+    "width": 1164,
+    "height": 1435
+  },
+  {
+    "id": "cozinhas-07",
+    "width": 1151,
+    "height": 1666
+  },
+  {
+    "id": "cozinhas-08",
+    "width": 1521,
+    "height": 1159
+  },
+  {
+    "id": "cozinhas-09",
+    "width": 1653,
+    "height": 1139
+  },
+  {
+    "id": "cozinhas-10",
+    "width": 1426,
+    "height": 1002
+  },
+  {
+    "id": "cozinhas-11",
+    "width": 1605,
+    "height": 1143
+  },
+  {
+    "id": "cozinhas-12",
+    "width": 1146,
+    "height": 1588
+  },
+  {
+    "id": "cozinhas-13",
+    "width": 1766,
+    "height": 1179
+  },
+  {
+    "id": "cozinhas-14",
+    "width": 961,
+    "height": 1440
+  },
+  {
+    "id": "cozinhas-15",
+    "width": 1440,
+    "height": 961
+  },
+  {
+    "id": "cozinhas-16",
+    "width": 1440,
+    "height": 961
+  },
+  {
+    "id": "cozinhas-17",
+    "width": 961,
+    "height": 1440
+  },
+  {
+    "id": "cozinhas-18",
+    "width": 961,
+    "height": 1440
+  },
+  {
+    "id": "cozinhas-19",
+    "width": 961,
+    "height": 1440
+  },
+  {
+    "id": "dormitorios-01",
+    "width": 1719,
+    "height": 1106
+  },
+  {
+    "id": "dormitorios-02",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "dormitorios-03",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "dormitorios-04",
+    "width": 1449,
+    "height": 2171
+  },
+  {
+    "id": "dormitorios-05",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "living-01",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "living-02",
+    "width": 1440,
+    "height": 975
+  },
+  {
+    "id": "living-03",
+    "width": 1695,
+    "height": 1045
+  },
+  {
+    "id": "living-04",
+    "width": 2560,
+    "height": 2044
+  },
+  {
+    "id": "living-05",
+    "width": 1080,
+    "height": 1440
+  },
+  {
+    "id": "living-06",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "living-07",
+    "width": 1080,
+    "height": 1440
+  },
+  {
+    "id": "living-08",
+    "width": 1080,
+    "height": 1440
+  },
+  {
+    "id": "living-09",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "living-10",
+    "width": 1440,
+    "height": 1822
+  },
+  {
+    "id": "living-11",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "banho-01",
+    "width": 1766,
+    "height": 1124
+  },
+  {
+    "id": "banho-02",
+    "width": 1440,
+    "height": 961
+  },
+  {
+    "id": "banho-03",
+    "width": 1067,
+    "height": 1600
+  },
+  {
+    "id": "banho-04",
+    "width": 961,
+    "height": 1440
+  },
+  {
+    "id": "banho-05",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "banho-06",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "banho-07",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "banho-08",
+    "width": 1053,
+    "height": 1493
+  },
+  {
+    "id": "corporativo-01",
+    "width": 1494,
+    "height": 1130
+  },
+  {
+    "id": "corporativo-02",
+    "width": 1570,
+    "height": 1098
+  },
+  {
+    "id": "corporativo-03",
+    "width": 1440,
+    "height": 981
+  },
+  {
+    "id": "corporativo-04",
+    "width": 961,
+    "height": 1440
+  },
+  {
+    "id": "corporativo-05",
+    "width": 1440,
+    "height": 961
+  },
+  {
+    "id": "corporativo-06",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "corporativo-07",
+    "width": 1440,
+    "height": 1988
+  },
+  {
+    "id": "corporativo-08",
+    "width": 1440,
+    "height": 1991
+  },
+  {
+    "id": "corporativo-09",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-01",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-02",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-03",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-04",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-05",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-06",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-07",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-08",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-09",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-10",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-11",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-12",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-13",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-14",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-15",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-16",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-17",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-18",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-19",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-20",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acessorios-21",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-22",
+    "width": 1440,
+    "height": 1100
+  },
+  {
+    "id": "acessorios-23",
+    "width": 1005,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-24",
+    "width": 960,
+    "height": 1440
+  },
+  {
+    "id": "acessorios-25",
+    "width": 1440,
+    "height": 960
+  },
+  {
+    "id": "acabamentos-01",
+    "width": 504,
+    "height": 556
+  },
+  {
+    "id": "acabamentos-02",
+    "width": 334,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-03",
+    "width": 340,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-04",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-05",
+    "width": 338,
+    "height": 366
+  },
+  {
+    "id": "acabamentos-06",
+    "width": 338,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-07",
+    "width": 252,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-08",
+    "width": 254,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-09",
+    "width": 258,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-10",
+    "width": 258,
+    "height": 280
+  },
+  {
+    "id": "acabamentos-11",
+    "width": 508,
+    "height": 554
+  },
+  {
+    "id": "acabamentos-12",
+    "width": 510,
+    "height": 554
+  },
+  {
+    "id": "acabamentos-13",
+    "width": 510,
+    "height": 558
+  },
+  {
+    "id": "acabamentos-14",
+    "width": 334,
+    "height": 364
+  },
+  {
+    "id": "acabamentos-15",
+    "width": 338,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-16",
+    "width": 338,
+    "height": 366
+  },
+  {
+    "id": "acabamentos-17",
+    "width": 246,
+    "height": 240
+  },
+  {
+    "id": "acabamentos-18",
+    "width": 342,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-19",
+    "width": 338,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-20",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-21",
+    "width": 342,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-22",
+    "width": 338,
+    "height": 366
+  },
+  {
+    "id": "acabamentos-23",
+    "width": 183,
+    "height": 197
+  },
+  {
+    "id": "acabamentos-24",
+    "width": 342,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-25",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-26",
+    "width": 342,
+    "height": 374
+  },
+  {
+    "id": "acabamentos-27",
+    "width": 338,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-28",
+    "width": 338,
+    "height": 366
+  },
+  {
+    "id": "acabamentos-29",
+    "width": 338,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-30",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-31",
+    "width": 344,
+    "height": 374
+  },
+  {
+    "id": "acabamentos-32",
+    "width": 338,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-33",
+    "width": 340,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-34",
+    "width": 340,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-35",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-36",
+    "width": 336,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-37",
+    "width": 338,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-38",
+    "width": 346,
+    "height": 374
+  },
+  {
+    "id": "acabamentos-39",
+    "width": 338,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-40",
+    "width": 256,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-41",
+    "width": 250,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-42",
+    "width": 246,
+    "height": 272
+  },
+  {
+    "id": "acabamentos-43",
+    "width": 506,
+    "height": 552
+  },
+  {
+    "id": "acabamentos-44",
+    "width": 260,
+    "height": 282
+  },
+  {
+    "id": "acabamentos-45",
+    "width": 512,
+    "height": 552
+  },
+  {
+    "id": "acabamentos-46",
+    "width": 258,
+    "height": 282
+  },
+  {
+    "id": "acabamentos-47",
+    "width": 510,
+    "height": 556
+  },
+  {
+    "id": "acabamentos-48",
+    "width": 508,
+    "height": 556
+  },
+  {
+    "id": "acabamentos-49",
+    "width": 508,
+    "height": 554
+  },
+  {
+    "id": "acabamentos-50",
+    "width": 256,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-51",
+    "width": 258,
+    "height": 280
+  },
+  {
+    "id": "acabamentos-52",
+    "width": 256,
+    "height": 282
+  },
+  {
+    "id": "acabamentos-53",
+    "width": 248,
+    "height": 274
+  },
+  {
+    "id": "acabamentos-54",
+    "width": 256,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-55",
+    "width": 256,
+    "height": 276
+  },
+  {
+    "id": "acabamentos-56",
+    "width": 262,
+    "height": 290
+  },
+  {
+    "id": "acabamentos-57",
+    "width": 254,
+    "height": 278
+  },
+  {
+    "id": "acabamentos-58",
+    "width": 248,
+    "height": 276
+  },
+  {
+    "id": "acabamentos-59",
+    "width": 246,
+    "height": 272
+  },
+  {
+    "id": "acabamentos-60",
+    "width": 254,
+    "height": 280
+  },
+  {
+    "id": "acabamentos-61",
+    "width": 248,
+    "height": 270
+  },
+  {
+    "id": "acabamentos-62",
+    "width": 246,
+    "height": 272
+  },
+  {
+    "id": "acabamentos-63",
+    "width": 336,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-64",
+    "width": 340,
+    "height": 374
+  },
+  {
+    "id": "acabamentos-65",
+    "width": 1706,
+    "height": 2560
+  },
+  {
+    "id": "acabamentos-66",
+    "width": 340,
+    "height": 374
+  },
+  {
+    "id": "acabamentos-67",
+    "width": 342,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-68",
+    "width": 338,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-69",
+    "width": 338,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-70",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-71",
+    "width": 336,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-72",
+    "width": 342,
+    "height": 366
+  },
+  {
+    "id": "acabamentos-73",
+    "width": 340,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-74",
+    "width": 340,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-75",
+    "width": 152,
+    "height": 177
+  },
+  {
+    "id": "acabamentos-76",
+    "width": 163,
+    "height": 184
+  },
+  {
+    "id": "acabamentos-77",
+    "width": 342,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-78",
+    "width": 338,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-79",
+    "width": 342,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-80",
+    "width": 342,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-81",
+    "width": 342,
+    "height": 368
+  },
+  {
+    "id": "acabamentos-82",
+    "width": 342,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-83",
+    "width": 342,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-84",
+    "width": 340,
+    "height": 374
+  },
+  {
+    "id": "acabamentos-85",
+    "width": 338,
+    "height": 370
+  },
+  {
+    "id": "acabamentos-86",
+    "width": 338,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-87",
+    "width": 344,
+    "height": 372
+  },
+  {
+    "id": "acabamentos-88",
+    "width": 340,
+    "height": 368
+  }
+]
