@@ -3,11 +3,11 @@ import { Image, getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import Arrow from '../components/Arrow.astro';
 import SurformPublications from '../components/SurformPublications.astro';
-import { surfaceGallery } from '../data/surform-media';
+import { surfaceGallery, applications } from '../data/surform-media';
 const photos = await Promise.all(surfaceGallery.map(async item => ({...item,full:await getImage({src:item.image,width:Math.min(item.image.width,1800),format:'webp',quality:92})})));
-const filters = [{id:'todos',name:'Todas'},{id:'cozinhas',name:'Cozinhas'},{id:'lavabos',name:'Lavabos'},{id:'banhos',name:'Banhos'},{id:'detalhes',name:'Detalhes'}];
+const filters = [{id:'todos',name:'Todas'},...applications.map(({id,name}) => ({id,name})),{id:'detalhes',name:'Detalhes'}];
 ---
-<Layout title="Galeria de aplicações — SURFORM" description="Explore possibilidades de superfícies sólidas em cozinhas, lavabos e banhos. Uma seleção visual para aproximar matéria e arquitetura.">
+<Layout title="Galeria de aplicações — SURFORM" description="Superfícies sólidas para cozinhas, lavabos, banhos, áreas gourmet, lavanderias, espaços comerciais e clínicas. Explore os desenhos e detalhes.">
   <section class="container ssm-page-heading ssm-gallery-heading"><div><p class="eyebrow">Galeria de aplicações</p><h1>Uma matéria.<br /><em>Diferentes espaços.</em></h1></div><div><p>Bancadas, cubas e os detalhes que conectam o conjunto. Uma seleção de possibilidades para começar a sua ideia.</p><a class="text-link" href="#publicacoes">Ver publicações da SURFORM <Arrow /></a></div></section>
   <section aria-label="Galeria de superfícies sólidas" data-surface-gallery>
     <div class="ssm-gallery-tools"><div class="container" role="group" aria-label="Filtrar por aplicação">{filters.map(item => <button type="button" id={item.id} data-surface-filter={item.id} aria-pressed={item.id === 'todos' ? 'true':'false'}>{item.name}</button>)}</div></div>

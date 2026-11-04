@@ -7,8 +7,13 @@ assert(existsSync(root), 'Execute npm run build antes da verificação.');
 const walk = directory => readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(path.join(directory, entry.name)) : [path.join(directory, entry.name)]);
 const files = walk(root);
 const pages = files.filter(file => file.endsWith('.html'));
-const expected = ['index.html', 'superficies/index.html', 'portfolio/index.html', 'aplicacoes/cozinhas/index.html', 'aplicacoes/lavabos/index.html', 'aplicacoes/banhos/index.html', 'sobre/index.html', 'contato/index.html', 'arquitetos/index.html', 'privacidade/index.html', '404.html'];
+const expected = ['index.html', 'superficies/index.html', 'portfolio/index.html', ...['cozinhas','lavabos','banhos','areas-gourmet','lavanderias','comerciais','clinicas'].map(slug => `aplicacoes/${slug}/index.html`), 'sobre/index.html', 'contato/index.html', 'arquitetos/index.html', 'privacidade/index.html', '404.html'];
 expected.forEach(file => assert(existsSync(path.join(root, file)), `Rota ausente: ${file}`));
+const excludedBrand = /evviva/i;
+for (const file of files) {
+  assert(!excludedBrand.test(path.relative(root,file)), 'Arquivo de marca retirada no pacote publicado.');
+  if (/\.(?:html|css|js|svg|json)$/i.test(file)) assert(!excludedBrand.test(readFileSync(file,'utf8')), `${path.relative(root,file)}: referência à marca retirada.`);
+}
 let checkedLinks = 0;
 let checkedImages = 0;
 let redirects = 0;
@@ -29,7 +34,7 @@ for (const file of pages) {
   assert.match(html, /name="robots" content="noindex, nofollow"/, `${relative}: prévia deve manter noindex.`);
   assert.match(html, /<title>[^<]+<\/title>/, `${relative}: título ausente.`);
   assert.match(html, /property="og:site_name" content="SURFORM"/, `${relative}: marca incorreta.`);
-  assert(!html.includes('evviva-favicon') && !html.includes('data-portfolio-filter="colecao-'), `${relative}: conteúdo de marca antiga na experiência SURFORM.`);
+  assert(!/planejados?|m[óo]veis|mobili[aá]rio/iu.test(html), `${relative}: oferta fora do escopo de superfícies sólidas.`);
   assert(!/lorem ipsum|href="javascript:|href="#"/i.test(html), `${relative}: placeholder ou link inválido.`);
   const pagePath = '/' + relative.replaceAll(path.sep, '/').replace(/index\.html$/, '');
   for (const match of html.matchAll(/(?:href|src)="([^"<>]+)"/g)) {

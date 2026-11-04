@@ -125,12 +125,12 @@ p { line-height: 1.8; }
 .philosophy-copy h2 { margin-bottom: 28px; }
 .philosophy-copy > p:not(.eyebrow) { max-width: 440px; font-size: 15px; color: var(--muted); margin-top: 18px; }
 .philosophy-copy .text-link { margin-top: 28px; }
-.family-philosophy { background: var(--ivory); }
-.family-philosophy .philosophy-grid { grid-template-columns: 1.15fr 1fr; gap: clamp(32px, 5vw, 80px); }
-.family-philosophy .philosophy-copy h2 { font-size: clamp(36px, 3.8vw, 60px); line-height: 1.13; }
+.surface-philosophy { background: var(--ivory); }
+.surface-philosophy .philosophy-grid { grid-template-columns: 1.15fr 1fr; gap: clamp(32px, 5vw, 80px); }
+.surface-philosophy .philosophy-copy h2 { font-size: clamp(36px, 3.8vw, 60px); line-height: 1.13; }
 @media (max-width: 800px) {
-  .family-philosophy .philosophy-grid { grid-template-columns: 1fr; gap: 32px; }
-  .family-philosophy .philosophy-copy h2 { font-size: clamp(34px, 7vw, 46px); }
+  .surface-philosophy .philosophy-grid { grid-template-columns: 1fr; gap: 32px; }
+  .surface-philosophy .philosophy-copy h2 { font-size: clamp(34px, 7vw, 46px); }
 }
 .material-composition { display: grid; grid-template-columns: 1.1fr 1fr .8fr; height: clamp(270px, 30vw, 420px); gap: 7px; }
 .material-sample { position: relative; overflow: hidden; display: flex; align-items: end; justify-content: space-between; padding: 24px; transition: filter .4s; color: var(--paper); }

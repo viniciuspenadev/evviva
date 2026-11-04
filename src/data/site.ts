@@ -2,7 +2,7 @@
 export const site = {
   name: 'SURFORM',
   title: 'SURFORM — A matéria encontra a sua forma.',
-  description: 'Superfícies sólidas sob medida para cozinhas, lavabos e banhos. Matéria, desenho e detalhes para o seu espaço.',
+  description: 'Bancadas, cubas e detalhes em superfície sólida mineral para residências, espaços comerciais e clínicas. SURFORM: matéria e desenho sob medida.',
   unitName: '',
   city: '',
   address: '',
@@ -12,7 +12,6 @@ export const site = {
   preview: true,
   officialUrl: 'https://www.instagram.com/surform_ssm/',
   instagram: 'https://www.instagram.com/surform_ssm/',
-  evvivaUrl: 'https://evviva.com.br/',
   storeLocator: 'https://www.instagram.com/surform_ssm/',
 } as const;
 

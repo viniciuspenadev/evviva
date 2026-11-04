@@ -5,14 +5,14 @@ import { services } from '../data/services';
 ---
 <section class="service-categories" id="projetos" aria-labelledby="services-title">
   <div class="container">
-    <div class="services-heading"><div><p class="eyebrow">Possibilidades para o seu espaço</p><h2 id="services-title">SSM, planejados<br /><em>e móveis.</em></h2></div><p>Da superfície ao mobiliário,<br />o seu espaço por inteiro.</p></div>
-    <ul class="services-grid" aria-label="Categorias de serviços">{services.map((service, index) => <li data-service-gallery={service.slides.length > 1 ? service.id : undefined} data-gallery-interval={6000 + index * 1500}><a class="service-card" href={service.href} target={service.external ? '_blank' : undefined} rel={service.external ? 'noopener noreferrer' : undefined} aria-label={`${service.action}${service.external ? ' (abre em nova aba)' : ''}`}>
+    <div class="services-heading"><div><p class="eyebrow">Possibilidades em superfície sólida</p><h2 id="services-title">Bancadas, cubas<br /><em>e detalhes.</em></h2></div><p>Uma matéria que conecta<br />o desenho e o uso.</p></div>
+    <ul class="services-grid" aria-label="Soluções em SSM">{services.map((service, index) => <li data-service-gallery={service.id} data-gallery-interval={6000 + index * 1500}><a class="service-card" href={service.href} aria-label={service.action}>
       <div class="service-card-images">{service.slides.map((slide,slideIndex) => <div class:list={['service-card-slide',{'is-active':slideIndex === 0}]} id={`service-photo-${service.id}-${slideIndex}`} data-service-slide aria-hidden={slideIndex === 0 ? undefined : 'true'}>
         <Image src={slide.image} widths={[480,720,1000,1200].filter(width => width <= slide.image.width)} sizes="(max-width:600px) 700px, (max-width:1000px) 90vw, 650px" format="webp" quality={90} alt={slide.alt} style={`object-position:${slide.position}`} loading="lazy" />
       </div>)}</div>
       <div class="service-card-shade"></div><div class:list={['service-card-top',{'has-gallery':service.slides.length > 1}]}><span>{service.label}</span></div>
-      <div class="service-card-copy"><h3 class="service-card-brand">{service.brand === 'surform' ? <><span class="sr-only">SSM — </span><span class="service-surform-mark">SURFORM<small>Superfícies sólidas</small></span></> : service.brand === 'evviva' ? <><span class="sr-only">Planejados </span><img class="service-evviva-mark" src="/brand/logo-evviva-branco.svg" width="192" height="32" alt="Evviva" decoding="async" /></> : <span class="service-surform-mark service-furniture-mark">{service.title}</span>}</h3><p>{service.description}</p><span class="service-card-action">{service.action}<Arrow /></span></div>
-    </a>{service.slides.length > 1 && <div class="service-gallery-dots" role="group" aria-label={`Fotos de ${service.title === 'SSM' ? 'superfícies' : 'planejados'}`} data-gallery-dots hidden>{service.slides.map((_,slideIndex) => <button type="button" aria-label={`Ver foto ${slideIndex + 1} de ${service.slides.length} de ${service.title === 'SSM' ? 'superfícies' : 'planejados'}`} aria-pressed={slideIndex === 0 ? 'true' : 'false'} aria-controls={`service-photo-${service.id}-${slideIndex}`} data-gallery-dot={slideIndex}><span aria-hidden="true"></span></button>)}</div>}</li>)}</ul>
+      <div class="service-card-copy"><h3>{service.title}</h3><p>{service.description}</p><span class="service-card-action">{service.action}<Arrow /></span></div>
+    </a><div class="service-gallery-dots" role="group" aria-label={`Fotos de ${service.galleryName}`} data-gallery-dots hidden>{service.slides.map((_,slideIndex) => <button type="button" aria-label={`Ver foto ${slideIndex + 1} de ${service.slides.length} de ${service.galleryName}`} aria-pressed={slideIndex === 0 ? 'true' : 'false'} aria-controls={`service-photo-${service.id}-${slideIndex}`} data-gallery-dot={slideIndex}><span aria-hidden="true"></span></button>)}</div></li>)}</ul>
   </div>
 </section>
 <style>
@@ -33,12 +33,7 @@ import { services } from '../data/services';
   .service-card-top.has-gallery { right: 124px; }
   .service-card-top > span:first-child { text-transform: uppercase; letter-spacing: .09em; text-shadow: 0 1px 6px #000; }
   .service-card-copy { position: absolute; bottom: 27px; left: 27px; right: 27px; }
-  .service-card-copy h3 { font-size: clamp(31px, 2.6vw, 42px); line-height: 1.15; }
-  .service-card-copy .service-card-brand { display: flex; align-items: end; min-height: 48px; }
-  .service-surform-mark { display: inline-flex; flex-direction: column; gap: 8px; font-family: var(--font-sans); font-size: clamp(23px,2.15vw,32px); line-height: 1; letter-spacing: .18em; font-weight: 400; }
-  .service-surform-mark small { font-family: var(--font-sans); font-size: 6px; line-height: 1; letter-spacing: .28em; text-transform: uppercase; color: #e1ddd3; }
-  .service-furniture-mark { text-transform: uppercase; }
-  .service-evviva-mark { width: 176px; height: auto; margin-bottom: 3px; }
+  .service-card-copy h3 { font-family: var(--font-sans); font-size: clamp(26px,2.2vw,34px); font-weight: 400; line-height: 1.15; letter-spacing: -.03em; }
   .service-card-copy > p { margin-top: 13px; font-size: 12px; line-height: 1.7; color: #e1ddd3; max-width: 360px; }
   .service-card-action { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-top: 24px; padding-top: 16px; border-top: 1px solid rgb(255 255 255 / .32); font-size: 10px; }
   .service-card-action :global(.arrow-icon) { width: 21px; transform: rotate(-35deg); }

@@ -9,7 +9,7 @@ import '../styles/surform.css';
 import SurformHeader from '../components/SurformHeader.astro';
 import SurformFooter from '../components/SurformFooter.astro';
 import { site } from '../data/site';
-interface Props { title?: string; description?: string; invitation?: boolean; brand?: 'evviva' | 'surform'; }
+interface Props { title?: string; description?: string; invitation?: boolean; }
 const { title = site.title, description = site.description, invitation = true } = Astro.props;
 const canonical = site.productionUrl ? new URL(Astro.url.pathname, site.productionUrl).href : null;
 ---
