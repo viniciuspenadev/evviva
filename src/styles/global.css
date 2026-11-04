@@ -14,6 +14,7 @@
   --taupe: #e8e3d9;
   --bronze: #8b7358;
   --line: #d2cbbf;
+  --content-max: 1680px;
   --gutter: clamp(24px, 5.1vw, 88px);
   color: var(--ink);
   background: var(--ivory);
@@ -44,7 +45,7 @@ h2 { font-size: clamp(2.6rem, 4.1vw, 4.3rem); line-height: 1.14; }
 h3 { font-size: 1.8rem; line-height: 1.2; letter-spacing: -.035em; }
 em { font-weight: 400; }
 p { line-height: 1.8; }
-.container { width: 100%; max-width: 1680px; padding-inline: var(--gutter); margin-inline: auto; }
+.container { width: 100%; max-width: var(--content-max); padding-inline: var(--gutter); margin-inline: auto; }
 .section { padding-block: clamp(72px, 7vw, 124px); }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; line-height: 1.6; }
 .eyebrow + h1, .eyebrow + h2 { margin-top: 22px; }
@@ -67,7 +68,7 @@ p { line-height: 1.8; }
 
 /* Cabeçalho e navegação */
 .site-header { position: sticky; top: 0; z-index: 50; background: var(--paper); border-bottom: 1px solid rgb(36 36 38 / .08); }
-.header-inner { max-width: 1800px; min-height: 94px; padding: 18px clamp(24px, 3.5vw, 64px); display: flex; gap: 32px; align-items: center; margin: 0 auto; }
+.header-inner { max-width: var(--content-max); min-height: 94px; padding: 18px var(--gutter); display: flex; gap: 32px; align-items: center; margin: 0 auto; }
 .desktop-nav { display: flex; align-items: center; justify-content: flex-end; gap: clamp(20px, 2.6vw, 44px); flex: 1; }
 .desktop-nav a { position: relative; font-size: 13px; padding: 12px 0; white-space: nowrap; }
 .desktop-nav a::after { content: ''; position: absolute; bottom: 6px; left: 0; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s; }
@@ -258,7 +259,6 @@ dialog::backdrop { background: rgb(25 25 28 / .65); backdrop-filter: blur(5px); 
 .review-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 24px; }
 
 /* Responsive, sans bloquer la lecture sur mobile */
-@media (min-width: 1600px) { .hero-content { padding-left: max(var(--gutter), calc((100vw - 1504px) / 2)); } }
 @media (max-width: 1100px) {
   .desktop-nav { display: none; }
   .header-inner { gap: 18px; min-height: 84px; }
