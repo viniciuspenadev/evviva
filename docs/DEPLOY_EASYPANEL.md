@@ -11,7 +11,7 @@ A aplicação produz arquivos estáticos com Astro. O Dockerfile executa o build
 5. Vincular o domínio SURFORM confirmado e configurar HTTPS no painel.
 6. Informar o argumento de build `PUBLIC_SITE_URL` com a URL pública completa, por exemplo a URL efetivamente configurada no serviço. Reexecutar o build para atualizar canonicals.
 
-O domínio anterior da Evviva foi retirado da configuração ativa. Esta revisão não escolhe nem configura um novo domínio, não altera DNS e não publica externamente.
+O domínio anterior foi retirado da configuração ativa. Configure o endereço confirmado para a SURFORM. Esta revisão não altera DNS nem publica externamente.
 
 ## Antes da publicação comercial
 
