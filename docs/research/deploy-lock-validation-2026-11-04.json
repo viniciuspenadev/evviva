@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-04",
+  "npm": "11.19.1",
+  "node": "v24.11.1",
+  "originalError": "EUSAGE",
+  "missing": [
+    "@emnapi/core@1.11.3",
+    "@emnapi/runtime@1.11.3"
+  ],
+  "added": [
+    {
+      "path": "node_modules/@emnapi/core",
+      "version": "1.11.3"
+    },
+    {
+      "path": "node_modules/@emnapi/runtime",
+      "version": "1.11.3"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+      "version": "1.11.1"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+      "version": "1.11.1"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+      "version": "1.2.2"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+      "version": "1.1.4"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+      "version": "0.10.2"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+      "version": "2.8.1"
+    }
+  ],
+  "existingVersionsChanged": [],
+  "linuxValidation": {
+    "os": "linux",
+    "cpu": "x64",
+    "libc": "musl",
+    "mode": "npm ci --include=dev --include=optional --dry-run --ignore-scripts --offline",
+    "exitCode": 0
+  },
+  "cleanInstall": {
+    "platform": "win32-x64",
+    "command": "npm ci --include=dev --no-audit --no-fund",
+    "installedPackages": 282,
+    "exitCode": 0
+  },
+  "freshBuild": {
+    "checkedFiles": 38,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "pages": 20,
+    "exitCode": 0
+  },
+  "verification": {
+    "localReferences": 477,
+    "images": 48,
+    "webp": 163,
+    "socialImages": 1,
+    "status": "OK"
+  },
+  "dockerExecuted": false,
+  "dockerUnavailable": true,
+  "oldSha256": "6fd85072cf7a5452d87e09e6938aa26fdd616c3f8031af8fe0a79b797f7dd4aa",
+  "newSha256": "2ff0e8b86ce46776f953772be212394518d5536ce275d66884fa09ea9f0cbced"
+}

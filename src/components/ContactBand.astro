@@ -1,0 +1,7 @@
+---
+import Arrow from './Arrow.astro';
+import { contactHref, contactLabel } from '../data/site';
+---
+<section class="ssm-contact" id="contato" aria-labelledby="contact-heading">
+  <div class="container ssm-contact-grid"><div><p class="eyebrow">Seu próximo projeto</p><h2 id="contact-heading">Toda forma começa<br /><em>com uma conversa.</em></h2></div><div><p>Traga uma ideia, uma referência ou a planta do seu espaço. Vamos conversar sobre as possibilidades.</p><a class="button button-ivory" href={contactHref} target="_blank" rel="noopener noreferrer">{contactLabel}<Arrow /></a></div></div>
+</section>

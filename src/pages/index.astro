@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import SurfaceDetail from '../components/SurfaceDetail.astro';
+import SurformApplications from '../components/SurformApplications.astro';
+import ServiceCategories from '../components/ServiceCategories.astro';
+import SurfaceCloseup from '../components/SurfaceCloseup.astro';
+import { surfaceImages, surfaceImageAlts } from '../data/surform-media';
+---
+<Layout>
+  <section class="hero ssm-hero" aria-labelledby="hero-title">
+    <Image class="hero-image" src={surfaceImages.kitchen} widths={[640,960,1280,surfaceImages.kitchen.width]} sizes="(max-width:600px) 1400px, 100vw" format="webp" quality={92} alt={surfaceImageAlts.kitchen} loading="eager" fetchpriority="high" />
+    <div class="hero-shade"></div>
+    <div class="container hero-content"><p class="eyebrow">Superfícies sólidas · Sob medida</p><h1 id="hero-title">A matéria<br class="mobile-only" /> encontra<br /><em>a sua forma.</em></h1><p class="hero-description">Superfícies para a casa e os espaços de trabalho.<br />Bancadas, cubas e detalhes sob medida.</p><a class="button button-ivory" href="#contato">Vamos falar sobre seu projeto <Arrow /></a></div>
+    <span class="container ssm-hero-note">SURFORM / Matéria para a vida real</span>
+  </section>
+  <ServiceCategories />
+  <SurfaceDetail />
+  <SurformApplications />
+  <section class="philosophy surface-philosophy section" id="jeito-de-viver" aria-labelledby="philosophy-title">
+    <div class="container philosophy-grid">
+      <SurfaceCloseup />
+      <div class="philosophy-copy">
+        <p class="eyebrow">Muito além das medidas</p>
+        <h2 id="philosophy-title">O seu jeito de viver<br />é o ponto de partida.</h2>
+        <p>A casa guarda o que somos. Os encontros, os pequenos rituais, as escolhas que fazemos todos os dias.</p>
+        <p>Na SURFORM, o desenho das superfícies começa por essas particularidades. Bancadas e cubas em diálogo com a arquitetura e com a vida que acontece nela.</p>
+        <a class="text-link" href="/sobre/">Conheça essa experiência <Arrow /></a>
+      </div>
+    </div>
+  </section>
+  <section class="ssm-approach section" aria-labelledby="approach-heading"><div class="container"><div class="ssm-approach-intro"><div><p class="eyebrow">Da primeira ideia ao detalhe</p><h2 id="approach-heading">Do desenho<br /><em>à superfície.</em></h2></div><p>Uma superfície faz parte de um conjunto. A conversa começa pela arquitetura e continua nas escolhas que dão forma ao projeto.</p></div><ol class="ssm-steps"><li><span>Entender</span><h3>O espaço e a rotina.</h3><p>Referências, medidas e a maneira como você imagina usar o ambiente.</p></li><li><span>Desenhar</span><h3>A forma e os encontros.</h3><p>Cubas, bancadas, bordas e relações com os outros elementos do projeto.</p></li><li><span>Definir</span><h3>A matéria e os detalhes.</h3><p>Produto, acabamento, condições de execução e cuidados para cada aplicação.</p></li></ol><a class="text-link" style="margin-top:35px;font-size:12px" href="/contato/#preparar">Como preparar o seu projeto <Arrow /></a></div></section>
+  <section class="ssm-architect-strip"><div class="container"><div><p class="eyebrow">Para arquitetos e designers</p><h2>O seu traço.<br /><em>Novas possibilidades.</em></h2></div><a class="text-link" href="/arquitetos/">Vamos desenvolver a ideia <Arrow /></a></div></section>
+</Layout>
