@@ -25,6 +25,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+html.lenis { scroll-behavior: auto; }
 body { margin: 0; min-width: 320px; }
 body.dialog-open { overflow: hidden; }
 button, input, select, textarea { font: inherit; }

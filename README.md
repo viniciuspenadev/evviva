@@ -27,6 +27,7 @@ O preview usa `http://127.0.0.1:4321/`. O resultado estático fica em `dist/`. O
 - `/privacidade/`: origem das imagens e uso dos canais externos.
 - Publicações históricas do perfil oficial @surform_ssm em `/sobre/` e na galeria. Incorporações carregadas somente ao abrir cada publicação.
 - Menu e visualizador com diálogo nativo, Escape e retorno do foco. Movimento reduzido respeitado.
+- Rolagem suave com Lenis 1.3.27 no mouse e nos links para seções da mesma página. Histórico e foco preservados; cabeçalho fixo considerado. Toque continua nativo, e menu/galeria suspendem a rolagem do fundo enquanto estão abertos.
 - Endereços antigos redirecionam para a nova experiência SURFORM.
 
 ## Configuração comercial
