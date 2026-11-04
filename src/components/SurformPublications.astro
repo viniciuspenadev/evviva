@@ -1,7 +1,0 @@
----
-import { surformPosts } from '../data/surform';
----
-<section class="ssm-publications section" id="publicacoes" aria-labelledby="publications-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">Do perfil oficial · @surform_ssm</p><h2 id="publications-title">Da SURFORM.<br /><em>Para ver de perto.</em></h2></div><p class="ssm-small-copy">Aplicações e detalhes publicados<br />pela própria SURFORM.</p></div><div class="ssm-publication-grid">{surformPosts.map(post => <article><p class="eyebrow">{post.category}</p><h3>{post.title}</h3><time datetime={post.datetime}>{post.date}</time><details data-publication><summary>Ver publicação oficial <span aria-hidden="true">+</span></summary><div class="ssm-post-frame"><iframe data-src={`https://www.instagram.com/p/${post.code}/embed/`} title={`Publicação oficial da SURFORM: ${post.title}`} loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; picture-in-picture"></iframe></div></details><a class="ssm-publication-source" href={`https://www.instagram.com/p/${post.code}/`} target="_blank" rel="noopener noreferrer">Abrir no Instagram ↗</a></article>)}</div></div></section>
-<script>
-  document.querySelectorAll<HTMLDetailsElement>('[data-publication]').forEach(post => post.addEventListener('toggle',()=>{const frame=post.querySelector<HTMLIFrameElement>('iframe');if(post.open && frame && !frame.getAttribute('src')) frame.src=frame.dataset.src!;}));
-</script>
