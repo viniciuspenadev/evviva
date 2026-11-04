@@ -1,0 +1,3 @@
+User-agent: *
+# Permite ler as prévias sociais e as regras noindex do HTML e do Nginx.
+Allow: /

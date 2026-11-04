@@ -1,0 +1,20 @@
+---
+import Arrow from './Arrow.astro';
+import { navigation } from '../data/site';
+const currentPath = Astro.url.pathname;
+---
+<header class="site-header surform-header"><div class="header-inner">
+  <a class="surform-brand" href="/" aria-label="SURFORM — início"><span>SURFORM</span><small>Superfícies sólidas</small></a>
+  <nav class="surform-nav" aria-label="Navegação principal">{navigation.map(item => <a href={item.href} aria-current={item.href === currentPath ? 'page' : undefined}>{item.label}</a>)}</nav>
+  <a class="button button-dark surform-header-cta" href="/contato/#preparar">Seu projeto <Arrow /></a>
+  <button class="menu-toggle surform-menu-toggle" type="button" aria-label="Abrir menu SURFORM" aria-expanded="false" aria-controls="surform-menu" data-surform-menu-open><span></span><span></span></button>
+</div></header>
+<dialog class="mobile-menu" id="surform-menu" aria-label="Menu SURFORM"><div class="menu-top"><a class="surform-brand" href="/" aria-label="SURFORM — início"><span>SURFORM</span><small>Superfícies sólidas</small></a><button type="button" class="icon-button close-button" aria-label="Fechar menu SURFORM" data-surform-menu-close>×</button></div><nav aria-label="Navegação no celular">{navigation.map(item => <a href={item.href}>{item.label}<Arrow /></a>)}<a href="/arquitetos/">Para arquitetos<Arrow /></a></nav><div class="menu-bottom"><a class="button button-dark" href="/#contato">Vamos falar sobre seu projeto <Arrow /></a></div></dialog>
+<script>
+  const menu = document.querySelector<HTMLDialogElement>('#surform-menu');
+  const trigger = document.querySelector<HTMLButtonElement>('[data-surform-menu-open]');
+  trigger?.addEventListener('click', () => { menu?.showModal(); trigger.setAttribute('aria-expanded','true'); document.body.classList.add('dialog-open'); });
+  menu?.querySelector('[data-surform-menu-close]')?.addEventListener('click', () => menu.close());
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => menu.close()));
+  menu?.addEventListener('close', () => { trigger?.setAttribute('aria-expanded','false'); document.body.classList.remove('dialog-open'); trigger?.focus({preventScroll:true}); });
+</script>

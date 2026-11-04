@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Arrow from '../../components/Arrow.astro';
+import { applications } from '../../data/surform-media';
+export function getStaticPaths() { return applications.map(application => ({params:{slug:application.id},props:{application}})); }
+const { application } = Astro.props;
+---
+<Layout title={`${application.name} em superfície sólida — SURFORM`} description={application.description}>
+  <section class="ssm-page-heading container"><a class="breadcrumb" href="/#aplicacoes">Aplicações <span>/</span> {application.name}</a><p class="eyebrow">SURFORM · {application.name}</p><h1>{application.headline}</h1><p>{application.description}</p></section>
+  <Image class="ssm-wide-image" src={application.image} widths={[640,960,1280,1536].filter(width => width <= application.image.width)} sizes="100vw" format="webp" quality={92} alt={application.alt} loading="eager" />
+  <section class="container section ssm-editorial-grid"><div><p class="eyebrow">O seu espaço como referência</p><h2>A forma acompanha<br /><em>a maneira de viver.</em></h2></div><div><ul class="ssm-spec-list">{application.details.map(detail => <li>{detail}</li>)}</ul><p style="margin-top:28px">Medidas, produto e acabamento são definidos para cada projeto. Uma referência visual ajuda a começar a conversa; o desenho técnico dá forma às escolhas.</p><a class="text-link" href={`/portfolio/#${application.id}`}>Veja na galeria <Arrow /></a></div></section>
+</Layout>

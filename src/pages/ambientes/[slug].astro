@@ -1,0 +1,8 @@
+---
+export function getStaticPaths() {
+  return [
+    {params:{slug:'cozinhas'},props:{target:'/aplicacoes/cozinhas/'}},
+  ];
+}
+return Astro.redirect(Astro.props.target,301);
+---

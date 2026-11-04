@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.astro/
+.cache/
+.env
+.env.*
+!.env.example
+*.log
+preview/qa/
+
+# Páginas públicas usadas somente na pesquisa de importação
+docs/research/*.html
+docs/archive/
